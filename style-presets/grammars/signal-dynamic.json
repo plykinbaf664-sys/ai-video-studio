@@ -1,0 +1,11 @@
+{
+ "version":1,"id":"signal-dynamic","parentStyleId":"personal-signal-dynamic","approvalStatus":"candidate","brandbookId":"personal-design-kit",
+ "assetIds":["personal-onest","personal-inter","music-relax-beat"],"referenceIds":["img-3320","img-3321","img-3322"],
+ "palette":{"paper":"#111319","ink":"#F6F3EC","accent":"#E87942"},
+ "typography":{"family":"PersonalOnest","body":78,"quote":88,"hero":96,"minimum":64,"weight":650},
+ "captions":{"maximumWords":4,"maximumCharacters":34,"splitGapMs":450,"tailMs":180,"maximumLines":2},
+ "motion":{"entryFrames":9,"translatePixels":18},"safe":{"x":96,"y":140,"width":804,"height":1480},
+ "scenes":["speaker","quote","split","comparison","full"],"minimumSceneFrames":24,
+ "music":{"mode":"steady","minimumVoiceLeadDb":14,"duckDb":0},
+ "directionRules":{"reference":"img-3322:14.3–19.3,26.3–31.2","rhythm":"Build states at verified spoken events; allow reading time and preserve delivery.","graphics":"One progressive explanation above a protected speaker; glass surfaces, warm light, restrained frame-driven entry.","speech":"One current caption layer, separate from explicitly retained earlier excerpts.","camera":"No automatic zoom. Visual observations may enlarge the protected region or request full source.","sound":"Keep the same continuous constant-gain bed and original speech.","limitations":"Candidate reference-driven2D/2.5D motion graphics; not a3D engine or20 complete styles."}
+}

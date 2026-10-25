@@ -1,0 +1,208 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.ai-video-studio/contracts/edit-plan.schema.json",
+  "title": "AI Video Studio edit plan (draft v0)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "source",
+    "output",
+    "style",
+    "clips",
+    "overlays"
+  ],
+  "properties": {
+    "version": {
+      "const": "0.1.0"
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "assetId",
+        "path",
+        "durationSeconds"
+      ],
+      "properties": {
+        "assetId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "durationSeconds": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    },
+    "output": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "width",
+        "height",
+        "fps"
+      ],
+      "properties": {
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "fps": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      }
+    },
+    "style": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "presetId",
+        "intensity",
+        "variant",
+        "subtitleMode",
+        "visualInsertPolicy"
+      ],
+      "properties": {
+        "presetId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "intensity": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "variant": {
+          "enum": [
+            "restrained",
+            "balanced",
+            "intense"
+          ]
+        },
+        "subtitleMode": {
+          "enum": [
+            "minimal",
+            "emphasis",
+            "kinetic"
+          ]
+        },
+        "visualInsertPolicy": {
+          "enum": [
+            "semantic_only",
+            "rich",
+            "minimal"
+          ]
+        }
+      }
+    },
+    "clips": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "sourceStartSeconds",
+          "sourceEndSeconds",
+          "outputStartSeconds",
+          "playbackRate"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceStartSeconds": {
+            "type": "number",
+            "minimum": 0
+          },
+          "sourceEndSeconds": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "outputStartSeconds": {
+            "type": "number",
+            "minimum": 0
+          },
+          "playbackRate": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "overlays": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "type",
+          "startSeconds",
+          "endSeconds",
+          "timeline",
+          "purpose"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "type": {
+            "enum": [
+              "title",
+              "subtitle",
+              "graphic",
+              "broll",
+              "callout"
+            ]
+          },
+          "startSeconds": {
+            "type": "number",
+            "minimum": 0
+          },
+          "endSeconds": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "timeline": {
+            "const": "output"
+          },
+          "purpose": {
+            "type": "string",
+            "minLength": 1
+          },
+          "text": {
+            "type": "string"
+          },
+          "assetId": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "description": "Draft contract only. Semantic validation must enforce end > start, non-overlap where required, source bounds, asset existence, audible sync and output duration."
+}

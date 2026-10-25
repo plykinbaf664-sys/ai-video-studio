@@ -1,0 +1,830 @@
+{
+  "version": 1,
+  "id": "context-domestic-002",
+  "presetId": "signal-dynamic",
+  "sourceSha256": "7db3f25c076c82732d8481c37233ac0d017c0ab70923ae233e1f198cecac471c",
+  "transcriptFile": "public/generated/reference-edit/edit.json",
+  "source": {
+    "width": 720,
+    "height": 1280,
+    "face": {
+      "x": 220,
+      "y": 260,
+      "width": 300,
+      "height": 420
+    },
+    "verificationRoi": {
+      "x": 260,
+      "y": 430,
+      "width": 220,
+      "height": 220
+    }
+  },
+  "cuts": [
+    {
+      "id": "hook",
+      "start": 0.2,
+      "end": 3.6666666666666665,
+      "purpose": "Set the stage."
+    },
+    {
+      "id": "dishes",
+      "start": 8.4,
+      "end": 10.366666666666667,
+      "purpose": "List the proofs of autonomy rapidly."
+    },
+    {
+      "id": "dinner",
+      "start": 13.733333333333333,
+      "end": 15.666666666666666,
+      "purpose": "List the proofs of autonomy rapidly."
+    },
+    {
+      "id": "repair",
+      "start": 21.066666666666666,
+      "end": 23.633333333333333,
+      "purpose": "List the proofs of autonomy rapidly."
+    },
+    {
+      "id": "independence",
+      "start": 27.866666666666667,
+      "end": 30.866666666666667,
+      "purpose": "Reveal the motivation behind the actions."
+    },
+    {
+      "id": "payoff-start",
+      "start": 38.266666666666666,
+      "end": 39.8,
+      "purpose": "Extend the list with a mundane task for comedic effect."
+    },
+    {
+      "id": "payoff-end",
+      "start": 40.1,
+      "end": 43.9,
+      "purpose": "Extend the list with a mundane task for comedic effect."
+    }
+  ],
+  "scenes": [
+    {
+      "from": 0,
+      "kind": "full",
+      "purpose": "Сохранить живую подачу hook: Заявление/поворот/развязка без отдельного бытового действия: оставить подачу на лице.",
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "width": 1080,
+        "height": 1920,
+        "sourceY": 0,
+        "zoom": 1
+      },
+      "reference": "img-3322:8–10.5",
+      "quotes": []
+    },
+    {
+      "from": 104,
+      "kind": "speaker",
+      "purpose": "Пользователь описал бытовую иронию: декларации самостоятельности противопоставляются вымышленным семейным сценам, где супруга участвует в постановке задачи. Это редакторская трактовка шутки, не наблюдение о реальной семье. Отдельное действие «Я сам решил помыть посуду.» получает соответствующий вымышленный бытовой кадр. Ведущий и его жесты остаются видимы под фотографией.",
+      "viewport": {
+        "x": 263.8636363636364,
+        "y": 900,
+        "width": 552.2727272727273,
+        "height": 810,
+        "sourceY": 224,
+        "zoom": 1
+      },
+      "reference": "img-3322:8–10.5",
+      "quotes": []
+    },
+    {
+      "from": 163,
+      "kind": "full",
+      "purpose": "Пользователь описал бытовую иронию: декларации самостоятельности противопоставляются вымышленным семейным сценам, где супруга участвует в постановке задачи. Это редакторская трактовка шутки, не наблюдение о реальной семье. Отдельное действие «Сам решил приготовить ужин.» получает соответствующий вымышленный бытовой кадр. Короткая полноэкранная смена крупности внутри перечня; реальный голос продолжается.",
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "width": 1080,
+        "height": 1920,
+        "sourceY": 0,
+        "zoom": 1
+      },
+      "reference": "img-3322:8–10.5",
+      "quotes": []
+    },
+    {
+      "from": 221,
+      "kind": "speaker",
+      "purpose": "Пользователь описал бытовую иронию: декларации самостоятельности противопоставляются вымышленным семейным сценам, где супруга участвует в постановке задачи. Это редакторская трактовка шутки, не наблюдение о реальной семье. Отдельное действие «Сам понял, что в ванной пора все починить.» получает соответствующий вымышленный бытовой кадр. Ведущий и его жесты остаются видимы под фотографией.",
+      "viewport": {
+        "x": 263.8636363636364,
+        "y": 900,
+        "width": 552.2727272727273,
+        "height": 810,
+        "sourceY": 224,
+        "zoom": 1
+      },
+      "reference": "img-3322:8–10.5",
+      "quotes": []
+    },
+    {
+      "from": 298,
+      "kind": "full",
+      "purpose": "Сохранить живую подачу independence: Заявление/поворот/развязка без отдельного бытового действия: оставить подачу на лице.",
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "width": 1080,
+        "height": 1920,
+        "sourceY": 0,
+        "zoom": 1
+      },
+      "reference": "img-3322:8–10.5",
+      "quotes": []
+    },
+    {
+      "from": 388,
+      "kind": "speaker",
+      "purpose": "Пользователь описал бытовую иронию: декларации самостоятельности противопоставляются вымышленным семейным сценам, где супруга участвует в постановке задачи. Это редакторская трактовка шутки, не наблюдение о реальной семье. Отдельное действие «И развешивать белье» получает соответствующий вымышленный бытовой кадр. Это подводка: вернуться к лицу до следующей развязки.",
+      "viewport": {
+        "x": 263.8636363636364,
+        "y": 900,
+        "width": 552.2727272727273,
+        "height": 810,
+        "sourceY": 224,
+        "zoom": 1
+      },
+      "reference": "img-3322:8–10.5",
+      "quotes": []
+    },
+    {
+      "from": 434,
+      "kind": "full",
+      "purpose": "Сохранить живую подачу payoff-end: Заявление/поворот/развязка без отдельного бытового действия: оставить подачу на лице.",
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "width": 1080,
+        "height": 1920,
+        "sourceY": 0,
+        "zoom": 1
+      },
+      "reference": "img-3322:8–10.5",
+      "quotes": []
+    }
+  ],
+  "viewports": {
+    "speaker": {
+      "x": 64,
+      "y": 620,
+      "width": 952,
+      "height": 1090,
+      "sourceY": 140,
+      "zoom": 1
+    },
+    "quote": {
+      "x": 64,
+      "y": 620,
+      "width": 952,
+      "height": 1090,
+      "sourceY": 140,
+      "zoom": 1
+    },
+    "split": {
+      "x": 64,
+      "y": 750,
+      "width": 952,
+      "height": 960,
+      "sourceY": 190,
+      "zoom": 1
+    },
+    "comparison": {
+      "x": 96,
+      "y": 840,
+      "width": 804,
+      "height": 870,
+      "sourceY": 230,
+      "zoom": 1
+    },
+    "full": {
+      "x": 0,
+      "y": 0,
+      "width": 1080,
+      "height": 1920,
+      "sourceY": 0,
+      "zoom": 1
+    }
+  },
+  "refinements": [
+    {
+      "text": "Ни",
+      "sourceStartMs": 0,
+      "correctedStartMs": 440,
+      "evidence": "Source-only 20ms RMS: 0.42=-63.9dBFS, 0.44=-57.5, 0.46=-31.3, 0.48=-21.9. Acoustic onset candidate preserves quiet initial consonant; no speech/audio edit."
+    },
+    {
+      "text": "посуду.",
+      "sourceStartMs": 9620,
+      "correctedEndMs": 10120,
+      "evidence": "Unprompted actual-final ASR word end maps to source10.08s. Original source 20ms RMS: 10.04=-35.8dBFS, 10.06=-45.2, 10.08=-51.6, 10.10=-56.0, 10.12=-62.2, 10.14=-66.2; source10.20–10.60 remains near -65dBFS. Conservative acoustic word end10.12 retains tail, replacing earlier 10.54 estimate in silence. Separate timing candidate, audio unchanged."
+    },
+    {
+      "text": "тоже",
+      "sourceStartMs": 39580,
+      "correctedStartMs": 40320,
+      "evidence": "Actual-final acoustic-window ASR separates final clause from preceding pause. Source-only 20ms RMS: 40.28=-68.4dBFS,40.30=-69.8,40.32=-22.8,40.34=-8.5,40.36=-6.2. Source39.9–40.30 is quiet; progressive payoff must not reveal this word at39.58. Chosen acoustic onset40.32; no voice edit."
+    },
+    {
+      "text": "Я",
+      "sourceStartMs": 7960,
+      "correctedStartMs": 8640,
+      "evidence": "Source-only stereo 48k RMS in 20ms windows: 8.60=-59.3dBFS, 8.62=-57.4, 8.64=-37.4, 8.66=-24.5, 8.68=-13.6. Initial ASR included quiet preroll. Acoustic onset candidate, original audio and word end unchanged."
+    },
+    {
+      "text": "Сам",
+      "sourceStartMs": 13560,
+      "correctedStartMs": 13980,
+      "evidence": "Source-only 20ms RMS: 13.94=-60.4dBFS, 13.96=-59.8, 13.98=-47.3, 14.00=-38.3, 14.02=-32.4, 14.10=-15.0. Preserve quiet initial sibilant; candidate onset at 13.98, no voice edit."
+    },
+    {
+      "text": "Сам",
+      "sourceStartMs": 20820,
+      "correctedStartMs": 21300,
+      "evidence": "Source-only 20ms RMS: 21.28=-62.6dBFS, 21.30=-52.5, 21.32=-36.1, 21.34=-31.1, 21.42=-6.4. Preserve quiet initial sibilant; candidate onset at 21.30, no voice edit."
+    },
+    {
+      "text": "И",
+      "sourceStartMs": 38220,
+      "correctedStartMs": 38520,
+      "evidence": "Existing isolated source-voice ASR plus source-only 20ms RMS onset evidence at 38.52s, artifacts/dry-irony-v3/audio-mixes.json. Separate source timing candidate, not human phonetic confirmation."
+    },
+    {
+      "text": "Потому",
+      "sourceStartMs": 27040,
+      "correctedStartMs": 28120,
+      "evidence": "Source-only decoded 48k stereo 20ms RMS windows: 27.04=-67.3dBFS, 27.50=-68.3, 28.10=-63.9, 28.12=-49.3, 28.14=-55.5, 28.16=-24.9, 28.18=-7.6. Original ASR starts the word in silence; historical final ASR also includes quiet preroll (18.10 output =27.50 source). Cue starts at conservative acoustic onset 28.12, not the earlier ASR start. Phonetic segmentation remains a candidate; original word text/end unchanged."
+    }
+  ],
+  "music": {
+    "assetId": "music-relax-beat",
+    "sourceStartSeconds": 8,
+    "targetDbFS": -34,
+    "fadeInSeconds": 0.15,
+    "fadeOutSeconds": 0.25
+  },
+  "color": {
+    "method": "Source-specific SDR display RGB with manual feathered face exposure, not automatic subject detection or Log/HDR conversion",
+    "gamma": 0.99,
+    "contrast": 1.02,
+    "pivot": 0.42,
+    "saturation": 0.99,
+    "rgbGain": [
+      1.002,
+      1,
+      0.996
+    ],
+    "face": {
+      "center": [
+        375,
+        480
+      ],
+      "radius": [
+        210,
+        330
+      ],
+      "exposureStops": 0.42,
+      "shadowLow": 0.28,
+      "shadowHigh": 0.65
+    }
+  },
+  "compositionId": "ContextDomesticPhoto",
+  "baseReuseJobId": "visual-001-b",
+  "pacing": {
+    "maximumGapMs": 600,
+    "policy": "Natural speech; director cannot pad duration or override protected audio."
+  },
+  "visualUnderstanding": {
+    "runId": "visual-001",
+    "sourceSha256": "7db3f25c076c82732d8481c37233ac0d017c0ab70923ae233e1f198cecac471c",
+    "analysisSha256": "7577126d5a25edc9b5b70da7e22af7cea8c4a8cf7359288b6ee490c6aedb3a64",
+    "segments": [
+      {
+        "from": 0,
+        "until": 104,
+        "unitId": "hook",
+        "frameIds": [
+          "f0002",
+          "f0003",
+          "f0004",
+          "f0005",
+          "f0006",
+          "f0007"
+        ],
+        "confidence": 0.95,
+        "protectedRects": [
+          {
+            "x": 201.60000000000002,
+            "y": 320,
+            "width": 251.99999999999997,
+            "height": 256
+          },
+          {
+            "x": 251.99999999999997,
+            "y": 576,
+            "width": 72,
+            "height": 192
+          },
+          {
+            "x": 396.00000000000006,
+            "y": 960,
+            "width": 216,
+            "height": 192
+          },
+          {
+            "x": 72,
+            "y": 256,
+            "width": 576,
+            "height": 1024
+          }
+        ]
+      },
+      {
+        "from": 104,
+        "until": 163,
+        "unitId": "dishes",
+        "frameIds": [
+          "f0016",
+          "f0017",
+          "f0018",
+          "f0019",
+          "f0020"
+        ],
+        "confidence": 0.9,
+        "protectedRects": [
+          {
+            "x": 201.60000000000002,
+            "y": 320,
+            "width": 251.99999999999997,
+            "height": 256
+          },
+          {
+            "x": 251.99999999999997,
+            "y": 576,
+            "width": 72,
+            "height": 192
+          },
+          {
+            "x": 396.00000000000006,
+            "y": 960,
+            "width": 216,
+            "height": 192
+          },
+          {
+            "x": 72,
+            "y": 256,
+            "width": 576,
+            "height": 1024
+          }
+        ]
+      },
+      {
+        "from": 163,
+        "until": 221,
+        "unitId": "dinner",
+        "frameIds": [
+          "f0027",
+          "f0028",
+          "f0029",
+          "f0030",
+          "f0031"
+        ],
+        "confidence": 0.9,
+        "protectedRects": [
+          {
+            "x": 201.60000000000002,
+            "y": 320,
+            "width": 251.99999999999997,
+            "height": 256
+          },
+          {
+            "x": 251.99999999999997,
+            "y": 576,
+            "width": 72,
+            "height": 192
+          },
+          {
+            "x": 396.00000000000006,
+            "y": 960,
+            "width": 216,
+            "height": 192
+          },
+          {
+            "x": 72,
+            "y": 256,
+            "width": 576,
+            "height": 1024
+          }
+        ]
+      },
+      {
+        "from": 221,
+        "until": 298,
+        "unitId": "repair",
+        "frameIds": [
+          "f0041",
+          "f0042",
+          "f0043",
+          "f0044",
+          "f0045"
+        ],
+        "confidence": 0.9,
+        "protectedRects": [
+          {
+            "x": 201.60000000000002,
+            "y": 320,
+            "width": 251.99999999999997,
+            "height": 256
+          },
+          {
+            "x": 251.99999999999997,
+            "y": 576,
+            "width": 72,
+            "height": 192
+          },
+          {
+            "x": 396.00000000000006,
+            "y": 960,
+            "width": 216,
+            "height": 192
+          },
+          {
+            "x": 72,
+            "y": 256,
+            "width": 576,
+            "height": 1024
+          }
+        ]
+      },
+      {
+        "from": 298,
+        "until": 388,
+        "unitId": "independence",
+        "frameIds": [
+          "f0056",
+          "f0057",
+          "f0058",
+          "f0059",
+          "f0060",
+          "f0061"
+        ],
+        "confidence": 0.9,
+        "protectedRects": [
+          {
+            "x": 201.60000000000002,
+            "y": 320,
+            "width": 251.99999999999997,
+            "height": 256
+          },
+          {
+            "x": 251.99999999999997,
+            "y": 576,
+            "width": 72,
+            "height": 192
+          },
+          {
+            "x": 396.00000000000006,
+            "y": 960,
+            "width": 216,
+            "height": 192
+          },
+          {
+            "x": 72,
+            "y": 256,
+            "width": 576,
+            "height": 1024
+          }
+        ]
+      },
+      {
+        "from": 388,
+        "until": 434,
+        "unitId": "payoff-start",
+        "frameIds": [
+          "f0076",
+          "f0077",
+          "f0078",
+          "f0079"
+        ],
+        "confidence": 0.9,
+        "protectedRects": [
+          {
+            "x": 201.60000000000002,
+            "y": 320,
+            "width": 251.99999999999997,
+            "height": 256
+          },
+          {
+            "x": 251.99999999999997,
+            "y": 576,
+            "width": 72,
+            "height": 192
+          },
+          {
+            "x": 396.00000000000006,
+            "y": 960,
+            "width": 216,
+            "height": 192
+          },
+          {
+            "x": 72,
+            "y": 256,
+            "width": 576,
+            "height": 1024
+          }
+        ]
+      },
+      {
+        "from": 434,
+        "until": 548,
+        "unitId": "payoff-end",
+        "frameIds": [
+          "f0084",
+          "f0085",
+          "f0086",
+          "f0087",
+          "f0088",
+          "f0089"
+        ],
+        "confidence": 0.9,
+        "protectedRects": [
+          {
+            "x": 201.60000000000002,
+            "y": 320,
+            "width": 251.99999999999997,
+            "height": 256
+          },
+          {
+            "x": 251.99999999999997,
+            "y": 576,
+            "width": 72,
+            "height": 192
+          },
+          {
+            "x": 396.00000000000006,
+            "y": 960,
+            "width": 216,
+            "height": 192
+          },
+          {
+            "x": 72,
+            "y": 256,
+            "width": 576,
+            "height": 1024
+          }
+        ]
+      }
+    ]
+  },
+  "visualPlan": {
+    "version": 1,
+    "domain": "domestic",
+    "authorship": "local-rules",
+    "policy": "domestic-counterpoint-v1",
+    "assets": [
+      {
+        "id": "domestic-photo-dishes-v1",
+        "sha256": "c9743834a94de267a99e49a703d98783ed72338c73879c9358692900ddd7b14e",
+        "kind": "illustration",
+        "domains": [
+          "domestic",
+          "general"
+        ],
+        "intents": [
+          "contrast"
+        ],
+        "styles": [
+          "dry-irony",
+          "signal-dynamic",
+          "editorial-focus"
+        ],
+        "rights": "generated",
+        "provenanceFile": "assets/library/visuals/domestic-photo-dishes-v1/provenance.json",
+        "aesthetic": "photographic",
+        "subjects": [
+          "dishwashing"
+        ],
+        "castId": "family-candid-a",
+        "photoSafety": {
+          "width": 1672,
+          "height": 941,
+          "protectedRegions": [
+            {
+              "x": 0.17,
+              "y": 0.07,
+              "width": 0.64,
+              "height": 0.78
+            }
+          ]
+        },
+        "runtimeFile": "generated/assets/visuals/domestic-photo-dishes-v1.png"
+      },
+      {
+        "id": "domestic-photo-dinner-v1",
+        "sha256": "1528d8c8122b5c73cfc43779f83cfff258fdee043dd73002e0e54be09b031984",
+        "kind": "illustration",
+        "domains": [
+          "domestic",
+          "general"
+        ],
+        "intents": [
+          "contrast"
+        ],
+        "styles": [
+          "dry-irony",
+          "signal-dynamic",
+          "editorial-focus"
+        ],
+        "rights": "generated",
+        "provenanceFile": "assets/library/visuals/domestic-photo-dinner-v1/provenance.json",
+        "aesthetic": "photographic",
+        "subjects": [
+          "cooking"
+        ],
+        "castId": "family-candid-a",
+        "photoSafety": {
+          "width": 941,
+          "height": 1672,
+          "protectedRegions": [
+            {
+              "x": 0.04,
+              "y": 0.105,
+              "width": 0.94,
+              "height": 0.52
+            }
+          ]
+        },
+        "runtimeFile": "generated/assets/visuals/domestic-photo-dinner-v1.png"
+      },
+      {
+        "id": "domestic-photo-repair-v1",
+        "sha256": "a5edad40fdbc1027a485c7d1e15b27d8f19fecb1709ed3085d027941957cac50",
+        "kind": "illustration",
+        "domains": [
+          "domestic",
+          "general"
+        ],
+        "intents": [
+          "contrast"
+        ],
+        "styles": [
+          "dry-irony",
+          "signal-dynamic",
+          "editorial-focus"
+        ],
+        "rights": "generated",
+        "provenanceFile": "assets/library/visuals/domestic-photo-repair-v1/provenance.json",
+        "aesthetic": "photographic",
+        "subjects": [
+          "bathroom-repair"
+        ],
+        "castId": "family-candid-a",
+        "photoSafety": {
+          "width": 1672,
+          "height": 941,
+          "protectedRegions": [
+            {
+              "x": 0.18,
+              "y": 0.03,
+              "width": 0.67,
+              "height": 0.85
+            }
+          ]
+        },
+        "runtimeFile": "generated/assets/visuals/domestic-photo-repair-v1.png"
+      },
+      {
+        "id": "domestic-photo-laundry-v1",
+        "sha256": "437154f44c6924df16b6bed6368bd1ee46aa24fef828011b71322d48a5c66be5",
+        "kind": "illustration",
+        "domains": [
+          "domestic",
+          "general"
+        ],
+        "intents": [
+          "contrast"
+        ],
+        "styles": [
+          "dry-irony",
+          "signal-dynamic",
+          "editorial-focus"
+        ],
+        "rights": "generated",
+        "provenanceFile": "assets/library/visuals/domestic-photo-laundry-v1/provenance.json",
+        "aesthetic": "photographic",
+        "subjects": [
+          "laundry-hanging"
+        ],
+        "castId": "family-candid-a",
+        "photoSafety": {
+          "width": 1672,
+          "height": 941,
+          "protectedRegions": [
+            {
+              "x": 0.12,
+              "y": 0.03,
+              "width": 0.78,
+              "height": 0.86
+            }
+          ]
+        },
+        "runtimeFile": "generated/assets/visuals/domestic-photo-laundry-v1.png"
+      }
+    ],
+    "beats": [
+      {
+        "id": "photo-dishes",
+        "from": 104,
+        "until": 163,
+        "sourceStartMs": 8640,
+        "sourceEndMs": 10120,
+        "assetId": "domestic-photo-dishes-v1",
+        "intent": "contrast",
+        "layout": "upper-panel",
+        "presentation": "family-photo",
+        "subject": "dishwashing",
+        "why": "Пользователь описал бытовую иронию: декларации самостоятельности противопоставляются вымышленным семейным сценам, где супруга участвует в постановке задачи. Это редакторская трактовка шутки, не наблюдение о реальной семье. Отдельное действие «Я сам решил помыть посуду.» получает соответствующий вымышленный бытовой кадр. Ведущий и его жесты остаются видимы под фотографией.",
+        "seriesId": "examples-104"
+      },
+      {
+        "id": "photo-dinner",
+        "from": 163,
+        "until": 221,
+        "sourceStartMs": 13980,
+        "sourceEndMs": 15420,
+        "assetId": "domestic-photo-dinner-v1",
+        "intent": "contrast",
+        "layout": "cutaway",
+        "presentation": "family-photo",
+        "subject": "cooking",
+        "why": "Пользователь описал бытовую иронию: декларации самостоятельности противопоставляются вымышленным семейным сценам, где супруга участвует в постановке задачи. Это редакторская трактовка шутки, не наблюдение о реальной семье. Отдельное действие «Сам решил приготовить ужин.» получает соответствующий вымышленный бытовой кадр. Короткая полноэкранная смена крупности внутри перечня; реальный голос продолжается.",
+        "seriesId": "examples-104"
+      },
+      {
+        "id": "photo-repair",
+        "from": 221,
+        "until": 298,
+        "sourceStartMs": 21300,
+        "sourceEndMs": 23380,
+        "assetId": "domestic-photo-repair-v1",
+        "intent": "contrast",
+        "layout": "upper-panel",
+        "presentation": "family-photo",
+        "subject": "bathroom-repair",
+        "why": "Пользователь описал бытовую иронию: декларации самостоятельности противопоставляются вымышленным семейным сценам, где супруга участвует в постановке задачи. Это редакторская трактовка шутки, не наблюдение о реальной семье. Отдельное действие «Сам понял, что в ванной пора все починить.» получает соответствующий вымышленный бытовой кадр. Ведущий и его жесты остаются видимы под фотографией.",
+        "seriesId": "examples-104"
+      },
+      {
+        "id": "photo-payoff-start",
+        "from": 388,
+        "until": 434,
+        "sourceStartMs": 38520,
+        "sourceEndMs": 39580,
+        "assetId": "domestic-photo-laundry-v1",
+        "intent": "contrast",
+        "layout": "upper-panel",
+        "presentation": "family-photo",
+        "subject": "laundry-hanging",
+        "why": "Пользователь описал бытовую иронию: декларации самостоятельности противопоставляются вымышленным семейным сценам, где супруга участвует в постановке задачи. Это редакторская трактовка шутки, не наблюдение о реальной семье. Отдельное действие «И развешивать белье» получает соответствующий вымышленный бытовой кадр. Это подводка: вернуться к лицу до следующей развязки."
+      }
+    ],
+    "restraint": "Иллюстрировать подходящие бытовые примеры, а не каждое слово. Заявление, самоописание и финальную реплику оставить на лице. Неподтверждённый контраст, неподходящая тема, отсутствующий ассет или короткая пауза — причина ничего не вставлять.",
+    "shots": [
+      {
+        "from": 0,
+        "reason": "Сохранить живую подачу hook: Заявление/поворот/развязка без отдельного бытового действия: оставить подачу на лице."
+      },
+      {
+        "from": 104,
+        "reason": "Пользователь описал бытовую иронию: декларации самостоятельности противопоставляются вымышленным семейным сценам, где супруга участвует в постановке задачи. Это редакторская трактовка шутки, не наблюдение о реальной семье. Отдельное действие «Я сам решил помыть посуду.» получает соответствующий вымышленный бытовой кадр. Ведущий и его жесты остаются видимы под фотографией."
+      },
+      {
+        "from": 163,
+        "reason": "Пользователь описал бытовую иронию: декларации самостоятельности противопоставляются вымышленным семейным сценам, где супруга участвует в постановке задачи. Это редакторская трактовка шутки, не наблюдение о реальной семье. Отдельное действие «Сам решил приготовить ужин.» получает соответствующий вымышленный бытовой кадр. Короткая полноэкранная смена крупности внутри перечня; реальный голос продолжается."
+      },
+      {
+        "from": 221,
+        "reason": "Пользователь описал бытовую иронию: декларации самостоятельности противопоставляются вымышленным семейным сценам, где супруга участвует в постановке задачи. Это редакторская трактовка шутки, не наблюдение о реальной семье. Отдельное действие «Сам понял, что в ванной пора все починить.» получает соответствующий вымышленный бытовой кадр. Ведущий и его жесты остаются видимы под фотографией."
+      },
+      {
+        "from": 298,
+        "reason": "Сохранить живую подачу independence: Заявление/поворот/развязка без отдельного бытового действия: оставить подачу на лице."
+      },
+      {
+        "from": 388,
+        "reason": "Пользователь описал бытовую иронию: декларации самостоятельности противопоставляются вымышленным семейным сценам, где супруга участвует в постановке задачи. Это редакторская трактовка шутки, не наблюдение о реальной семье. Отдельное действие «И развешивать белье» получает соответствующий вымышленный бытовой кадр. Это подводка: вернуться к лицу до следующей развязки."
+      },
+      {
+        "from": 434,
+        "reason": "Сохранить живую подачу payoff-end: Заявление/поворот/развязка без отдельного бытового действия: оставить подачу на лице."
+      }
+    ]
+  }
+}

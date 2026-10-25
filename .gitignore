@@ -2,6 +2,27 @@ node_modules
 dist
 .DS_Store
 .env
+.env.*
+!.env.*.example
 
 # Ignore the output video from Git but not videos you import into src/.
 out
+build/
+build-personal/
+public/design-kit/
+ai-video-studio-personal-design-kit-v1/
+public/source.mp4
+*.log
+.venv-transcribe/
+.cache/
+public/generated/
+artifacts/
+brandbooks/media/*
+!brandbooks/media/README.md
+reference-library/media/*
+!reference-library/media/README.md
+assets/library/*
+!assets/library/README.md
+
+# Private imported kits and historical audiovisual materials
+archives/

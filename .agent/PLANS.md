@@ -1,0 +1,17 @@
+# Планы сложных изменений
+
+Текущий проход — .agent/plans/0019-presenter-and-clean-photos.md: убрать служебную надпись и добавить отдельные source-word-anchored планы ведущего. Технически завершён context-domestic-003: чистые фото, три крупных плана и новый SDR look; 40 финальных кадров просмотрены, ASR review-required, художественный candidate. Актуальный статус проверки — в живом плане и docs/PRESENTER_FRAMING.md.
+
+Завершён проход .agent/plans/0018-domestic-photo-story.md:4 фотографических бытовых контрапункта, переносимый storyboard policy/planner,7 мотивированных композиций и фактическая58-кадровая cutaway с непрерывной речью. Проверенный out/context-domestic-002.mp4,548 кадров/40 слов;27 финальных кадров просмотрены.86 тестов/lint/design/context/out audit прошли; source/звук и прежние5 MP4 сохранены. Галерея3106 показывает фото-версию. Документация/ограничения — docs/DOMESTIC_PHOTO_STORY.md и живой план; ASR review-required, художественный candidate.
+
+Завершён проход .agent/plans/0017-contextual-visual-library.md: мотивированная смена композиции, единая библиотека в assets/catalog.json, реальные поиски Commons/Openverse, оригинальная бытовая иллюстрация и3 параметрические схемы, bounded visualPlan и director response. Проверенный out/context-domestic-001.mp4 (548 кадров/40 слов),15 просмотренных кадров готового файла и9 кадров схем.79 тестов/lint/design/context/out audit прошли; галерея http://127.0.0.1:3106/. ASR review-required и художественный candidate сохраняются; browser client interaction не проверен после detach. Подробности — живой план и docs/CONTEXTUAL_VISUAL_LIBRARY.md.
+
+Завершённый технический проход — .agent/plans/0016-visual-understanding.md: один отдельно согласованный image-вызов37 кадров, два проверенных MP4 visual-001-a/b, по10 просмотренных финальных кадров и фактический comparison.json/COMPARISON.md/comparison.html.73 теста/lint/design/context/out audit прошли. Наблюдения грубые; person-protection postcondition явно hash-bound. ASR review-required и художественный candidate сохраняются. Документы docs/VISUAL_UNDERSTANDING.md и docs/QWEN_AMENDMENT_AUDIT.md.
+
+Предшествующий проход — .agent/plans/0015-qwen-first-live-edit.md: настройка приватного env, один настоящий Qwen-запрос, явная редакторская проверка, раскадровка/Studio и новый MP4 через полный QC. Исходный ответ Qwen сохранён; docs/QWEN_FIRST_RUN.md. Предшествующий0014 описан ниже как подготовка адаптера.
+
+Предшествующий проход — .agent/plans/0014-qwen-connection.md: подготовка отключённого по умолчанию облачного адаптера Alibaba Cloud Model Studio и локальной проверки точного текстового payload; docs/QWEN_SETUP.md. На этапе0014 живой провайдер ещё не проверялся; настоящий вызов и его ограничения зафиксированы в0015 и docs/QWEN_FIRST_RUN.md. Следующие абзацы фиксируют предшествующий0013.
+
+Завершённый0013-director-offline.md — локальная проверка/компиляция режиссёрского плана, docs/DIRECTOR_WORKFLOW.md.0012 — исправленный темп и18.27s ролик;0011 — повторно используемый Dry Irony и31s монтаж. Целевой смысловой этап — docs/SEMANTIC_DIRECTION_PLAN.md. Ровный звук —0010; V3 —0009; аудит/три сравнения —0008. Последующие явные предпочтения пользователя имеют приоритет.
+
+ExecPlan нужен для нескольких подсистем: референсы → сцены → звук → QC, общая временная модель, новые источники. Живой план содержит цель, факты, шаги, проверки/выходы и реальные ограничения; не фиксирует навсегда первую неудачную реализацию.

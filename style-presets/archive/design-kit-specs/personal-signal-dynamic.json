@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "personal-signal-dynamic",
+  "name": "Signal Dynamic",
+  "implementationStatus": "component_source_provided_not_runtime_verified",
+  "scope": "user personal brand",
+  "brandbook": "brandbooks/media/BRANDBOOK.md",
+  "mood": "dynamic",
+  "summary": "Чуть быстрее, структурнее и графичнее, чем редакционный.",
+  "direction": {
+    "rhythm": "medium",
+    "density": "medium",
+    "cuts": "motivated-beat-edits",
+    "audio": "subtle-beat-with-quiet-ui-hits",
+    "visualEvidence": "number-cards-and-ui-proof-only-when-referenced",
+    "avoid": [
+      "constant zoom",
+      "fake numbers",
+      "decorative dashboard"
+    ],
+    "bestFor": [
+      "ИИ",
+      "маркетинг",
+      "кейсы"
+    ]
+  },
+  "typography": {
+    "heroPosition": "middle",
+    "captionPosition": "bottom",
+    "heroWeight": 820,
+    "heroSizePx1080x1920": 79,
+    "baselineFont": "Onest",
+    "capsNotAlwaysRequired": true
+  },
+  "colorProfile": "brandbooks/media/palette.json",
+  "signatureElement": "copper",
+  "demoCompId": "AIVS-Dynamic",
+  "sourceRules": [
+    "audible-first captions",
+    "original and final timeline mapping",
+    "no baked-in subtitle duplicates",
+    "spatial safety zones",
+    "licensed assets only"
+  ],
+  "constraints": {
+    "previewTextOnly": true,
+    "requiresActualSourceVideoForRealMontage": true,
+    "notACompleteAutomaticEditor": true
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "personal-signal-dynamic",
+  "name": "Signal Dynamic",
+  "implementationStatus": "implemented",
+  "approvalStatus": "candidate",
+  "brandbookId": "personal-design-kit",
+  "referenceIds": [
+    "img-3322"
+  ],
+  "assetIds": [
+    "personal-onest",
+    "personal-inter",
+    "music-hip-hop-02",
+    "personal-semantic-mark",
+    "personal-soft-ui-tick"
+  ],
+  "rules": {
+    "rhythm": {
+      "source": "edit-plan",
+      "keepCompleteWords": true,
+      "minimumLeadMs": 120,
+      "minimumTailMs": 120
+    },
+    "subtitles": {
+      "maximumLines": 2,
+      "maximumWordsPerGroup": 6,
+      "maximumCharactersPerGroup": 44,
+      "splitGapMs": 450,
+      "tailMs": 140,
+      "quotesFromRetainedSpeechOnly": true
+    },
+    "graphics": {
+      "components": [
+        "spoken-type",
+        "portrait-window",
+        "glass-flow",
+        "chapter-marker"
+      ],
+      "maximumConcurrentFocus": 1,
+      "insertionPolicy": "semantic_only"
+    },
+    "motion": {
+      "quoteFadeFrames": 6,
+      "reframe": "purpose-driven"
+    },
+    "sound": {
+      "preserveOriginalVoice": true,
+      "music": "licensed-bed",
+      "soundEffects": "none"
+    },
+    "transitions": {
+      "kind": "cut",
+      "durationFrames": 0
+    },
+    "framing": {
+      "objectFit": "contain",
+      "automaticSubjectDetection": false
+    }
+  },
+  "design": {
+    "font": {
+      "assetId": "personal-onest",
+      "family": "PersonalOnest",
+      "runtimeFile": "generated/assets/fonts/personal-onest.ttf",
+      "subtitleWeight": 600,
+      "headingWeight": 820
+    },
+    "slot": {
+      "x": 96,
+      "y": 160,
+      "width": 804,
+      "maxHeight": 220
+    },
+    "safe": {
+      "left": 96,
+      "right": 180,
+      "top": 140,
+      "bottom": 300
+    },
+    "subtitle": {
+      "preferredSize": 76,
+      "minSize": 50,
+      "lineHeight": 1.1
+    },
+    "heading": {
+      "preferredSize": 94,
+      "minSize": 72,
+      "lineHeight": 1.03
+    },
+    "card": {
+      "paddingX": 0,
+      "paddingY": 0,
+      "radius": 0,
+      "background": "#111319",
+      "text": "#F6F3EC",
+      "border": "#E87942"
+    }
+  },
+  "staging": {
+    "renderer": "signal",
+    "referenceBeats": [
+      {
+        "referenceId": "img-3322",
+        "startSeconds": 6,
+        "endSeconds": 33,
+        "technique": "Speech inside a graphic argument, visible face and microphone below"
+      }
+    ],
+    "musicAssetId": "music-hip-hop-02",
+    "musicStartSeconds": 8,
+    "musicPauseDb": -24,
+    "musicDuckDb": -13,
+    "musicStopFrame": 348,
+    "scenes": [
+      {
+        "from": 0,
+        "layout": "split",
+        "purpose": "Speech inside a graphic argument, visible face and microphone below"
+      },
+      {
+        "from": 108,
+        "layout": "graphic",
+        "purpose": "Repeat already-heard claim in speech pause, preserve original ambience"
+      },
+      {
+        "from": 150,
+        "layout": "split",
+        "purpose": "First action becomes a glass quote node"
+      },
+      {
+        "from": 267,
+        "layout": "graphic",
+        "purpose": "Visual counterpoint between complete phrases"
+      },
+      {
+        "from": 307,
+        "layout": "split",
+        "purpose": "Laundry phrase adds a second real action"
+      },
+      {
+        "from": 348,
+        "layout": "payoff",
+        "purpose": "Return to full portrait; music drops out for spoken irony"
+      }
+    ]
+  }
+}

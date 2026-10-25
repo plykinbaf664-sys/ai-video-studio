@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "documentary",
+  "name": "Documentary",
+  "implementationStatus": "not_implemented",
+  "goal": "Объяснять события с проверяемыми источниками",
+  "bestFor": "История, расследования, интервью, факты",
+  "directorRules": {
+    "editingRhythm": "По структуре аргументов, архивные вставки по факту",
+    "subtitleDesign": "Локации, даты, источник и подписи",
+    "motionLanguage": "Сдержанные lower thirds, таймлайн событий",
+    "graphicsAndBroll": "Архив, карты, документы с правами и верификацией",
+    "soundDesign": "Нейтральный документальный саунд",
+    "avoid": "Выдуманных цитат/газет, фальшивых доказательств",
+    "semanticPolicy": "Применять только при подтверждённой смысловой функции, не по регулярному таймеру."
+  },
+  "supportedVariantsToImplement": [
+    "restrained",
+    "balanced",
+    "intense"
+  ],
+  "demoStoryboard": [
+    {
+      "beat": 1,
+      "intention": "Факт с датой и источником"
+    },
+    {
+      "beat": 2,
+      "intention": "Объясняющий таймлайн"
+    },
+    {
+      "beat": 3,
+      "intention": "Проверяемый вывод"
+    }
+  ],
+  "preview": {
+    "status": "not_rendered",
+    "renderWithSameSourceAsOtherPresets": true
+  }
+}

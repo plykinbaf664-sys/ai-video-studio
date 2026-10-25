@@ -1,0 +1,9 @@
+{
+  "voiceGain": 0.84,
+  "music": "none",
+  "sounds": {
+    "editorial": [],
+    "dynamic": [{ "frame": 269, "file": "semantic-mark.wav", "volume": 0.04 }],
+    "irony": [{ "frame": 429, "file": "dry-punct.wav", "volume": 0.045 }]
+  }
+}

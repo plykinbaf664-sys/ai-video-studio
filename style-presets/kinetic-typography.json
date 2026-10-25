@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "kinetic-typography",
+  "name": "Kinetic Typography",
+  "implementationStatus": "not_implemented",
+  "goal": "Сделать текст самостоятельным объясняющим движением",
+  "bestFor": "Манифест, концепции, фразы с сильным ритмом",
+  "directorRules": {
+    "editingRhythm": "По синтаксису и акценту речи",
+    "subtitleDesign": "Слова меняют форму и позицию, не заслоняя смысл",
+    "motionLanguage": "Типографские морфы, траектории по смыслу",
+    "graphicsAndBroll": "B-roll минимален, графику часто заменяет слово",
+    "soundDesign": "Текст синхронизирован с голосом и микроакцентами",
+    "avoid": "Беспорядочного летающего текста",
+    "semanticPolicy": "Применять только при подтверждённой смысловой функции, не по регулярному таймеру."
+  },
+  "supportedVariantsToImplement": [
+    "restrained",
+    "balanced",
+    "intense"
+  ],
+  "demoStoryboard": [
+    {
+      "beat": 1,
+      "intention": "Ключевое слово получает движение"
+    },
+    {
+      "beat": 2,
+      "intention": "Контраст двух понятий"
+    },
+    {
+      "beat": 3,
+      "intention": "Собрать фразу в цельный вывод"
+    }
+  ],
+  "preview": {
+    "status": "not_rendered",
+    "renderWithSameSourceAsOtherPresets": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+ "version":1,"id":"editorial-focus","parentStyleId":"personal-editorial-focus","approvalStatus":"candidate","brandbookId":"personal-design-kit",
+ "assetIds":["personal-onest","personal-inter","music-relax-beat"],"referenceIds":["img-3320"],
+ "palette":{"paper":"#F6F3EC","ink":"#111319","accent":"#E87942"},
+ "typography":{"family":"PersonalOnest","body":78,"quote":88,"hero":96,"minimum":64,"weight":650},
+ "captions":{"maximumWords":4,"maximumCharacters":34,"splitGapMs":450,"tailMs":180,"maximumLines":2},
+ "motion":{"entryFrames":7,"translatePixels":6},"safe":{"x":96,"y":140,"width":804,"height":1480},
+ "scenes":["full"],"minimumSceneFrames":24,
+ "music":{"mode":"steady","minimumVoiceLeadDb":14,"duckDb":0},
+ "directionRules":{"reference":"img-3320:0–18","graphics":"Cardless current speech over a protected natural portrait; no extra lists or decorative panels.","camera":"No automatic zoom; preserve observed hands, face and held objects.","sound":"Inherited original voice and continuous constant-gain music; historical ducking is not inherited.","status":"Conservative Visual Understanding policy; no new editorial-focus MP4 evaluated yet."}
+}

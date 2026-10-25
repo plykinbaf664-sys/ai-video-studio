@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "high-energy",
+  "name": "High Energy",
+  "implementationStatus": "not_implemented",
+  "goal": "Создать максимальный темп там, где он оправдан",
+  "bestFor": "Челлендж, экспресс-разбор, насыщенный динамичный контент",
+  "directorRules": {
+    "editingRhythm": "Плотный монтаж, короткие планы, темп меняется с аргументом",
+    "subtitleDesign": "Короткие броские субтитры",
+    "motionLanguage": "Жёсткий scale/whip, но с контролем зрительской нагрузки",
+    "graphicsAndBroll": "Подтверждающие детали, визуальные счётчики только по данным",
+    "soundDesign": "Энергичный, но не клиппирующий звук",
+    "avoid": "Слепого ускорения речи, потери логики",
+    "semanticPolicy": "Применять только при подтверждённой смысловой функции, не по регулярному таймеру."
+  },
+  "supportedVariantsToImplement": [
+    "restrained",
+    "balanced",
+    "intense"
+  ],
+  "demoStoryboard": [
+    {
+      "beat": 1,
+      "intention": "Мощный старт"
+    },
+    {
+      "beat": 2,
+      "intention": "Три коротких факта"
+    },
+    {
+      "beat": 3,
+      "intention": "Разрядка и итог"
+    }
+  ],
+  "preview": {
+    "status": "not_rendered",
+    "renderWithSameSourceAsOtherPresets": true
+  }
+}

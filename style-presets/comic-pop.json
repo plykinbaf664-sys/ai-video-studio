@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "comic-pop",
+  "name": "Comic Pop",
+  "implementationStatus": "not_implemented",
+  "goal": "Объяснять ярко и легко",
+  "bestFor": "Развлекательное обучение, лёгкие демонстрации",
+  "directorRules": {
+    "editingRhythm": "Пульсирующая смена карточек",
+    "subtitleDesign": "Комиксные реплики, крупные краткие слова",
+    "motionLanguage": "Пружинные появления и диагональная графика",
+    "graphicsAndBroll": "Плашки, облака речи, простые рисунки",
+    "soundDesign": "Поп-акценты и чистый голос",
+    "avoid": "Мельтешения и нечитаемых пузырей",
+    "semanticPolicy": "Применять только при подтверждённой смысловой функции, не по регулярному таймеру."
+  },
+  "supportedVariantsToImplement": [
+    "restrained",
+    "balanced",
+    "intense"
+  ],
+  "demoStoryboard": [
+    {
+      "beat": 1,
+      "intention": "Проблема в комиксной панели"
+    },
+    {
+      "beat": 2,
+      "intention": "Решение из двух шагов"
+    },
+    {
+      "beat": 3,
+      "intention": "Ясный итог"
+    }
+  ],
+  "preview": {
+    "status": "not_rendered",
+    "renderWithSameSourceAsOtherPresets": true
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "screen-demo",
+  "name": "Screen Demo",
+  "implementationStatus": "not_implemented",
+  "goal": "Показать настоящий процесс в интерфейсе",
+  "bestFor": "Сайты, приложения, AI-агенты, обучение продукту",
+  "directorRules": {
+    "editingRhythm": "По реальным действиям пользователя",
+    "subtitleDesign": "Метки кликов, короткие шаги",
+    "motionLanguage": "Осмысленный zoom на контролы, подсветки курсора",
+    "graphicsAndBroll": "Реальные скринкасты, не выдумывать результаты",
+    "soundDesign": "Голос и тихие сигналы интерфейса",
+    "avoid": "Ложных UI, скрывающих шаги зумов",
+    "semanticPolicy": "Применять только при подтверждённой смысловой функции, не по регулярному таймеру."
+  },
+  "supportedVariantsToImplement": [
+    "restrained",
+    "balanced",
+    "intense"
+  ],
+  "demoStoryboard": [
+    {
+      "beat": 1,
+      "intention": "Показать исходный экран"
+    },
+    {
+      "beat": 2,
+      "intention": "Действие и подчёркнутая область"
+    },
+    {
+      "beat": 3,
+      "intention": "Результат шага"
+    }
+  ],
+  "preview": {
+    "status": "not_rendered",
+    "renderWithSameSourceAsOtherPresets": true
+  }
+}

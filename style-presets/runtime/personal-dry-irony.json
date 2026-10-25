@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "personal-dry-irony",
+  "name": "Dry Irony",
+  "implementationStatus": "implemented",
+  "approvalStatus": "candidate",
+  "brandbookId": "personal-design-kit",
+  "referenceIds": [
+    "img-3321"
+  ],
+  "assetIds": [
+    "personal-onest",
+    "personal-inter",
+    "music-relax-beat",
+    "personal-semantic-mark",
+    "personal-soft-ui-tick"
+  ],
+  "rules": {
+    "rhythm": {
+      "source": "edit-plan",
+      "keepCompleteWords": true,
+      "minimumLeadMs": 120,
+      "minimumTailMs": 120
+    },
+    "subtitles": {
+      "maximumLines": 2,
+      "maximumWordsPerGroup": 6,
+      "maximumCharactersPerGroup": 44,
+      "splitGapMs": 450,
+      "tailMs": 140,
+      "quotesFromRetainedSpeechOnly": true
+    },
+    "graphics": {
+      "components": [
+        "spoken-type",
+        "portrait-window",
+        "quote-poster"
+      ],
+      "maximumConcurrentFocus": 1,
+      "insertionPolicy": "semantic_only"
+    },
+    "motion": {
+      "quoteFadeFrames": 9,
+      "reframe": "purpose-driven"
+    },
+    "sound": {
+      "preserveOriginalVoice": true,
+      "music": "licensed-bed",
+      "soundEffects": "none"
+    },
+    "transitions": {
+      "kind": "cut",
+      "durationFrames": 0
+    },
+    "framing": {
+      "objectFit": "contain",
+      "automaticSubjectDetection": false
+    }
+  },
+  "design": {
+    "font": {
+      "assetId": "personal-onest",
+      "family": "PersonalOnest",
+      "runtimeFile": "generated/assets/fonts/personal-onest.ttf",
+      "subtitleWeight": 600,
+      "headingWeight": 650
+    },
+    "slot": {
+      "x": 96,
+      "y": 160,
+      "width": 804,
+      "maxHeight": 220
+    },
+    "safe": {
+      "left": 96,
+      "right": 180,
+      "top": 140,
+      "bottom": 300
+    },
+    "subtitle": {
+      "preferredSize": 60,
+      "minSize": 50,
+      "lineHeight": 1.1
+    },
+    "heading": {
+      "preferredSize": 108,
+      "minSize": 72,
+      "lineHeight": 1.03
+    },
+    "card": {
+      "paddingX": 0,
+      "paddingY": 0,
+      "radius": 0,
+      "background": "#F6F3EC",
+      "text": "#111319",
+      "border": "#E87942"
+    }
+  },
+  "staging": {
+    "renderer": "paper",
+    "referenceBeats": [
+      {
+        "referenceId": "img-3321",
+        "startSeconds": 10,
+        "endSeconds": 40,
+        "technique": "Warm paper, restrained type, portrait as an editorial image"
+      }
+    ],
+    "musicAssetId": "music-relax-beat",
+    "musicStartSeconds": 8,
+    "musicPauseDb": -27,
+    "musicDuckDb": -11,
+    "musicStopFrame": 348,
+    "scenes": [
+      {
+        "from": 0,
+        "layout": "portrait",
+        "purpose": "Warm paper, restrained type, portrait as an editorial image"
+      },
+      {
+        "from": 150,
+        "layout": "poster",
+        "purpose": "Wide portrait window plus a large spoken action below"
+      },
+      {
+        "from": 240,
+        "layout": "portrait",
+        "purpose": "Give the reaction visual breathing room"
+      },
+      {
+        "from": 267,
+        "layout": "portrait",
+        "purpose": "Reset before the final complete phrase"
+      },
+      {
+        "from": 348,
+        "layout": "payoff",
+        "purpose": "Dry oversized spoken quote; music falls away, natural reaction remains"
+      }
+    ]
+  }
+}

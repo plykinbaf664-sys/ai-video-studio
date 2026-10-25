@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "retro-analog",
+  "name": "Retro Analog",
+  "implementationStatus": "not_implemented",
+  "goal": "Придать материалу ретро-атмосферу",
+  "bestFor": "Ностальгия, истории брендов, ретроспектива",
+  "directorRules": {
+    "editingRhythm": "Неторопливые монтажные сдвиги",
+    "subtitleDesign": "Моноширинные/ретро подписи",
+    "motionLanguage": "Лёгкие плёночные переходы и шум",
+    "graphicsAndBroll": "Архивный визуал только с правами",
+    "soundDesign": "Мягкая аналоговая атмосфера",
+    "avoid": "Имитации старого документа как доказательства",
+    "semanticPolicy": "Применять только при подтверждённой смысловой функции, не по регулярному таймеру."
+  },
+  "supportedVariantsToImplement": [
+    "restrained",
+    "balanced",
+    "intense"
+  ],
+  "demoStoryboard": [
+    {
+      "beat": 1,
+      "intention": "Ввод с датой эпохи"
+    },
+    {
+      "beat": 2,
+      "intention": "Ностальгический контекст"
+    },
+    {
+      "beat": 3,
+      "intention": "Возврат к настоящему"
+    }
+  ],
+  "preview": {
+    "status": "not_rendered",
+    "renderWithSameSourceAsOtherPresets": true
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "whiteboard-explainer",
+  "name": "Whiteboard Explainer",
+  "implementationStatus": "not_implemented",
+  "goal": "Разъяснить сложную идею по шагам",
+  "bestFor": "Обучение, процессы, модели решений",
+  "directorRules": {
+    "editingRhythm": "Ритм следует появлению каждого шага",
+    "subtitleDesign": "Маркировки и краткие формулировки",
+    "motionLanguage": "Поочерёдное рисование стрелок и блоков",
+    "graphicsAndBroll": "Схемы как центральный визуал",
+    "soundDesign": "Нейтральный голос, мягкие звуки рисования опционально",
+    "avoid": "Перегруженной доски",
+    "semanticPolicy": "Применять только при подтверждённой смысловой функции, не по регулярному таймеру."
+  },
+  "supportedVariantsToImplement": [
+    "restrained",
+    "balanced",
+    "intense"
+  ],
+  "demoStoryboard": [
+    {
+      "beat": 1,
+      "intention": "Вопрос"
+    },
+    {
+      "beat": 2,
+      "intention": "Схема из трёх блоков"
+    },
+    {
+      "beat": 3,
+      "intention": "Упрощённый итог"
+    }
+  ],
+  "preview": {
+    "status": "not_rendered",
+    "renderWithSameSourceAsOtherPresets": true
+  }
+}

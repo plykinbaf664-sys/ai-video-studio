@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "personal-editorial-focus",
+  "name": "Editorial Focus",
+  "implementationStatus": "component_source_provided_not_runtime_verified",
+  "scope": "user personal brand",
+  "brandbook": "brandbooks/media/BRANDBOOK.md",
+  "mood": "restrained",
+  "summary": "Сдержанная редакционная подача; аккуратное чувство ритма.",
+  "direction": {
+    "rhythm": "calm",
+    "density": "low",
+    "cuts": "keep-breathing",
+    "audio": "silence-or-subtle-ambient",
+    "visualEvidence": "one-quote-or-contrast-per-important-thought",
+    "avoid": [
+      "whip pans",
+      "random cuts",
+      "loud risers"
+    ],
+    "bestFor": [
+      "личный сторителлинг",
+      "экспертные выводы"
+    ]
+  },
+  "typography": {
+    "heroPosition": "top",
+    "captionPosition": "bottom",
+    "heroWeight": 720,
+    "heroSizePx1080x1920": 72,
+    "baselineFont": "Onest",
+    "capsNotAlwaysRequired": true
+  },
+  "colorProfile": "brandbooks/media/palette.json",
+  "signatureElement": "bracket",
+  "demoCompId": "AIVS-Editorial",
+  "sourceRules": [
+    "audible-first captions",
+    "original and final timeline mapping",
+    "no baked-in subtitle duplicates",
+    "spatial safety zones",
+    "licensed assets only"
+  ],
+  "constraints": {
+    "previewTextOnly": true,
+    "requiresActualSourceVideoForRealMontage": true,
+    "notACompleteAutomaticEditor": true
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "business-data",
+  "name": "Business Data",
+  "implementationStatus": "not_implemented",
+  "goal": "Объяснить цифры и причинно-следственные связи",
+  "bestFor": "Метрики, маркетинг, экономика, отчёты",
+  "directorRules": {
+    "editingRhythm": "Склейки по структуре анализа",
+    "subtitleDesign": "Чёткие числовые подписи и единицы измерения",
+    "motionLanguage": "Пошаговое раскрытие диаграмм",
+    "graphicsAndBroll": "Графики только на проверенных данных с источником",
+    "soundDesign": "Минимум SFX, ровный голос",
+    "avoid": "Придуманных процентов или графиков без шкалы",
+    "semanticPolicy": "Применять только при подтверждённой смысловой функции, не по регулярному таймеру."
+  },
+  "supportedVariantsToImplement": [
+    "restrained",
+    "balanced",
+    "intense"
+  ],
+  "demoStoryboard": [
+    {
+      "beat": 1,
+      "intention": "Исходная метрика"
+    },
+    {
+      "beat": 2,
+      "intention": "Сравнение показателей"
+    },
+    {
+      "beat": 3,
+      "intention": "Практический вывод"
+    }
+  ],
+  "preview": {
+    "status": "not_rendered",
+    "renderWithSameSourceAsOtherPresets": true
+  }
+}

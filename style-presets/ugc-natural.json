@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "ugc-natural",
+  "name": "UGC Natural",
+  "implementationStatus": "not_implemented",
+  "goal": "Сохранить ощущение живого человеческого видео",
+  "bestFor": "Личный блог, доверительный отзыв, разговор",
+  "directorRules": {
+    "editingRhythm": "Почти невидимые удаления ошибок/пауз",
+    "subtitleDesign": "Сдержанные субтитры, простая подача",
+    "motionLanguage": "Минимальный reframe, стабилизация при нужде",
+    "graphicsAndBroll": "Только уместные личные вставки",
+    "soundDesign": "Естественный голос, минимальная музыка",
+    "avoid": "Ненатуральной «идеальной» синхронизации и множества эффектов",
+    "semanticPolicy": "Применять только при подтверждённой смысловой функции, не по регулярному таймеру."
+  },
+  "supportedVariantsToImplement": [
+    "restrained",
+    "balanced",
+    "intense"
+  ],
+  "demoStoryboard": [
+    {
+      "beat": 1,
+      "intention": "Живой хук"
+    },
+    {
+      "beat": 2,
+      "intention": "Речь без отвлекающих вставок"
+    },
+    {
+      "beat": 3,
+      "intention": "Спокойный CTA"
+    }
+  ],
+  "preview": {
+    "status": "not_rendered",
+    "renderWithSameSourceAsOtherPresets": true
+  }
+}

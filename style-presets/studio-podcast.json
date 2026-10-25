@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "studio-podcast",
+  "name": "Studio Podcast",
+  "implementationStatus": "not_implemented",
+  "goal": "Сделать разговор удобным для просмотра",
+  "bestFor": "Интервью, подкасты, мнения экспертов",
+  "directorRules": {
+    "editingRhythm": "Чистые склейки, смена крупности по говорящему",
+    "subtitleDesign": "Лаконичные читаемые субтитры, имена",
+    "motionLanguage": "Мягкая смена камеры/ракурса",
+    "graphicsAndBroll": "Цитатные карточки, редкие подтверждающие фрагменты",
+    "soundDesign": "Приоритет разборчивости диалога",
+    "avoid": "Гиперактивного монтажа, закрывающих лицо блоков",
+    "semanticPolicy": "Применять только при подтверждённой смысловой функции, не по регулярному таймеру."
+  },
+  "supportedVariantsToImplement": [
+    "restrained",
+    "balanced",
+    "intense"
+  ],
+  "demoStoryboard": [
+    {
+      "beat": 1,
+      "intention": "Хук цитатой"
+    },
+    {
+      "beat": 2,
+      "intention": "Смена на отвечающего"
+    },
+    {
+      "beat": 3,
+      "intention": "Ключевой вывод"
+    }
+  ],
+  "preview": {
+    "status": "not_rendered",
+    "renderWithSameSourceAsOtherPresets": true
+  }
+}

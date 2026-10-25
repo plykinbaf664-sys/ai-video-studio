@@ -1,0 +1,286 @@
+{
+  "version": "1.0",
+  "files": [
+    {
+      "path": ".agent/plans/0002-personal-design-kit.md",
+      "bytes": 3213,
+      "sha256": "b3177803e816b86a381c5bfa54e8d7ab7ce3c8dc52dc653c3a684e952b5590e7"
+    },
+    {
+      "path": "CODEX_HANDOFF.md",
+      "bytes": 3410,
+      "sha256": "6b391ad67d3ffd471b8d722f45c2f51a24ae6bf2594de9c693b6b59a8fcb8e7d"
+    },
+    {
+      "path": "DESIGN_KIT_START_HERE.md",
+      "bytes": 4906,
+      "sha256": "052f1dc5bad9157a6a491db072334e43d71d6b5e42ef70f09000d839706c1e07"
+    },
+    {
+      "path": "assets/library/LICENSES_AND_SOURCES.md",
+      "bytes": 1971,
+      "sha256": "4da440effd9688ffbbe97fa01cec38358b6ddb9bb5ea107ad95b6c29dfc4bc23"
+    },
+    {
+      "path": "assets/library/asset-registry.json",
+      "bytes": 3029,
+      "sha256": "967d93b89244fe05b95d40849e5f5c30f88a37c96ed3274ff070038d3fa479bb"
+    },
+    {
+      "path": "assets/library/fonts/README.md",
+      "bytes": 1966,
+      "sha256": "30a592aea8582290eedc1adec1cb5789a3d638aff4b03ed7219d19ee9bf37ad7"
+    },
+    {
+      "path": "assets/library/fonts/font-registry.json",
+      "bytes": 429,
+      "sha256": "2089bc6b7bd163a02772f68ee9349a3b116c2fa808e341f016cde39dbd8c0410"
+    },
+    {
+      "path": "assets/library/graphics/README.md",
+      "bytes": 682,
+      "sha256": "cb8a620c76df49ae9653cc8abc885f41f35929a16c90b32b2811606e2883b63d"
+    },
+    {
+      "path": "assets/library/graphics/semantic-brackets.svg",
+      "bytes": 290,
+      "sha256": "5a03e3ea7644088aabecc077ebfeb371a0bda46157a96ed6bae3459be834e47d"
+    },
+    {
+      "path": "assets/library/music/README.md",
+      "bytes": 2816,
+      "sha256": "d8dff0f64f4dd386c770d48e9d8d0e006348621c285d02f22550cc16fb1c4396"
+    },
+    {
+      "path": "assets/library/music/music-shortlist.json",
+      "bytes": 1325,
+      "sha256": "1cdf4951a2988eb69ca93cb90c996d3b3102987a5e88039d9a7b2cb5affa7fbd"
+    },
+    {
+      "path": "assets/library/sfx/README.md",
+      "bytes": 1312,
+      "sha256": "2fa8a0384366cc7cca7760e4d446e9ef9a41fd2f283fe70e9dfa8b9c6280d9e3"
+    },
+    {
+      "path": "assets/library/sfx/dry-punct.wav",
+      "bytes": 8684,
+      "sha256": "b81f3d2a80ddf2797c58a0be4ceb0030821664b5d00feb49b2096e7cfed270c8"
+    },
+    {
+      "path": "assets/library/sfx/quiet-swish.wav",
+      "bytes": 11564,
+      "sha256": "ccadb6000e196ec37ad0c97779acd618a5be0026fd71ca53d5b3eb4063a9587c"
+    },
+    {
+      "path": "assets/library/sfx/semantic-mark.wav",
+      "bytes": 13484,
+      "sha256": "dc16494dc3cbcd2b7445631cef14b76f47d89cbcdc79ed977bebcb8162d523ba"
+    },
+    {
+      "path": "assets/library/sfx/soft-ui-tick.wav",
+      "bytes": 5084,
+      "sha256": "3893d944d36de44cfe4c22d5f11115a7fab2b3f7f6fca7a98d1e955a18d7a110"
+    },
+    {
+      "path": "brandbooks/media/BRANDBOOK.md",
+      "bytes": 5446,
+      "sha256": "529403e0eb1b5d24106b735dbc4147d4225adfac81c06b208148f236592e3f1f"
+    },
+    {
+      "path": "brandbooks/media/SIGNATURE.md",
+      "bytes": 1568,
+      "sha256": "6ada2401a1ad2d4a6ffc9d185ca8d8087fc10635f6dac778e7f8499d665a533a"
+    },
+    {
+      "path": "brandbooks/media/brand.json",
+      "bytes": 771,
+      "sha256": "5d736b5e6861d5d74637e31a171915969738b3ce86ab33b7d6f169773cc25927"
+    },
+    {
+      "path": "brandbooks/media/motion.json",
+      "bytes": 458,
+      "sha256": "a41e906d17c550a3c9a03aab35695cf85fd6ee5b82d43fb0f768aef814218a50"
+    },
+    {
+      "path": "brandbooks/media/palette.json",
+      "bytes": 331,
+      "sha256": "17cefe7f19b2e097bfe0d4349951fd42a4e7559c2a1ba29af92a9f3489eb155c"
+    },
+    {
+      "path": "brandbooks/media/typography.json",
+      "bytes": 675,
+      "sha256": "45ea374bbf15f933c0618e95f6e16bb70576a88f5503a6de3721b9f1e8548c6b"
+    },
+    {
+      "path": "design-kit-three-styles-overview.png",
+      "bytes": 65793,
+      "sha256": "e385a983b4e463d15044732820dddf0cf261e9e5165785056df914f2b2fc84bb"
+    },
+    {
+      "path": "docs/PERSONAL_DESIGN_SYSTEM.md",
+      "bytes": 5732,
+      "sha256": "048205eb5680f23e165df0c680e28ffb8e664590ab659429ded62f25489d2b6a"
+    },
+    {
+      "path": "reference-library/media/REFERENCE_BREAKDOWN.md",
+      "bytes": 4142,
+      "sha256": "87963c30b699146c89a318190cc471436d7b64930956144b091d65b7789f80f0"
+    },
+    {
+      "path": "reference-library/media/reference-index.json",
+      "bytes": 9219,
+      "sha256": "ba3afe7c8d27a09822b04877411d920c09f418d0277405f7850dacc9a7c63c89"
+    },
+    {
+      "path": "reference-library/media/screenshots/IMG_3303.jpeg",
+      "bytes": 206090,
+      "sha256": "9c6731bf8e1701a18580347d429fda68a55f8da016a204d8859d05b5e7614528"
+    },
+    {
+      "path": "reference-library/media/screenshots/IMG_3304.jpeg",
+      "bytes": 149850,
+      "sha256": "bb09355d9df68d162fb6e574be3978b3983c43eaa35ed7e9f96867e5888d14eb"
+    },
+    {
+      "path": "reference-library/media/screenshots/IMG_3305.jpeg",
+      "bytes": 197797,
+      "sha256": "9852fadc4ec8dd6d7e1c0fa0bdde4528e10871f9e33a2c7055432fd66dbface3"
+    },
+    {
+      "path": "reference-library/media/screenshots/IMG_3306.jpeg",
+      "bytes": 219311,
+      "sha256": "2488cd942af2f1e79cda9ec104c80485b05d408ff779fd2e9b3d65d828288eb1"
+    },
+    {
+      "path": "reference-library/media/screenshots/IMG_3307.jpeg",
+      "bytes": 235152,
+      "sha256": "0cb91ac33177a2b2a89c05e3fac02d9541f7b33aa9327f0484148d055d892980"
+    },
+    {
+      "path": "reference-library/media/screenshots/IMG_3308.jpeg",
+      "bytes": 219509,
+      "sha256": "7665df7d899261723046822060862efd816a74bb7b4676fa27d1d53a15b4f04e"
+    },
+    {
+      "path": "reference-library/media/screenshots/IMG_3309.jpeg",
+      "bytes": 214597,
+      "sha256": "d4d746cbc149153e4e07fba0ca995d078a36294f7a023483ee7a367f26448a2d"
+    },
+    {
+      "path": "reference-library/media/screenshots/IMG_3310.jpeg",
+      "bytes": 221281,
+      "sha256": "21a07c7a0ce9f083e8c239dbbf70e4b0dede3f7137096b4895e21db263929757"
+    },
+    {
+      "path": "reference-library/media/screenshots/IMG_3311.jpeg",
+      "bytes": 278296,
+      "sha256": "bd9238b3dd192afd1bb0ed174b8fae5642a9db0a8398826cacc363b1464a291d"
+    },
+    {
+      "path": "reference-library/media/screenshots/IMG_3312.jpeg",
+      "bytes": 234509,
+      "sha256": "1ebc31625d03319f8f59bbe942273d40089e58d2a9917ef488a21121cb9d805f"
+    },
+    {
+      "path": "reference-library/media/screenshots/IMG_3313.jpeg",
+      "bytes": 230491,
+      "sha256": "21ce43acb88052389bf7312815a0bb72369b739447b091fef768b03278fa8101"
+    },
+    {
+      "path": "reference-library/media/screenshots/IMG_3314.jpeg",
+      "bytes": 223095,
+      "sha256": "12eaca073746854b1d2b9b12128d11a24adcce53483f44982cf477f93dc5321d"
+    },
+    {
+      "path": "reference-library/media/screenshots/IMG_3315.jpeg",
+      "bytes": 223856,
+      "sha256": "b0421eba1e0d3ca7b87e0bd5892884046cbd2872f640e5f8a56d28b61ed72d77"
+    },
+    {
+      "path": "reference-library/media/screenshots/IMG_3316.jpeg",
+      "bytes": 227137,
+      "sha256": "d5ea6b9ed252ded03e8110c0b9b17f16c64829bce195ba08b1debfc502b59dc0"
+    },
+    {
+      "path": "reference-library/media/screenshots/IMG_3317.jpeg",
+      "bytes": 284315,
+      "sha256": "ac1db5cf36a3a8662b79470637deefe0d9e6921edaa23d3d22304117c0595c93"
+    },
+    {
+      "path": "reference-library/media/video/README.md",
+      "bytes": 476,
+      "sha256": "47b5cc63df0d9984f86ebf11d1aff92a910638e871db75a4e4b83667ce996c6e"
+    },
+    {
+      "path": "scripts/sync-design-assets.mjs",
+      "bytes": 805,
+      "sha256": "f75eebc43b4a8ec09325c7f39eba5d00e04095ad851ea593cf8c9693583c8b6d"
+    },
+    {
+      "path": "scripts/verify-design-kit.mjs",
+      "bytes": 1444,
+      "sha256": "7eb1a5650fe50272bbd89669f0eae0cecc43cad92721c89a458259c4da33e299"
+    },
+    {
+      "path": "src/design/DesignPreview.tsx",
+      "bytes": 3070,
+      "sha256": "be5d3f0c29fa2a1622dffaf72d50574bfb686ed4fa3b8446c4ea5d298203a358"
+    },
+    {
+      "path": "src/design/README.md",
+      "bytes": 1800,
+      "sha256": "e6ea0c26296d24da8065d01e733aae888771bf22b8bc57831ea75d67d680b212"
+    },
+    {
+      "path": "src/design/components/CueRenderer.tsx",
+      "bytes": 3820,
+      "sha256": "d323967252862c193d4a84e709d05ee00c9c5527b690d66cb557f2cd54106103"
+    },
+    {
+      "path": "src/design/components/SemanticBrackets.tsx",
+      "bytes": 1324,
+      "sha256": "67cd9b7e9f2f81be47def4cf9485043a3b75fcfdccc862cb67272e3f517b6d1c"
+    },
+    {
+      "path": "src/design/demo-cues.json",
+      "bytes": 980,
+      "sha256": "2fc78108681ca9b3df6fcad2ffe3bcc9cb6efa03c2af6f3035c98f7624aa6171"
+    },
+    {
+      "path": "src/design/preview-entry.ts",
+      "bytes": 122,
+      "sha256": "237b286d867766202dc741637d8a5a538c8ce0f9bef8b8e02350ca049b711e01"
+    },
+    {
+      "path": "src/design/preview-root.tsx",
+      "bytes": 866,
+      "sha256": "c5c0129aab4d461a91a01d179bd37f9eec6cf14ab224c020a00877c508f3bcbc"
+    },
+    {
+      "path": "src/design/theme.ts",
+      "bytes": 1043,
+      "sha256": "37af0a3d89bc0f56ec0743f6dfd2c1fd02a8cc593f4720a0aa3f1ffb59aac9b4"
+    },
+    {
+      "path": "src/design/types.ts",
+      "bytes": 600,
+      "sha256": "8955224f76df0ff03c21925ee5f9b2033333b9bc30fa4d2c19e14081a4f312bb"
+    },
+    {
+      "path": "style-presets/personal-dry-irony.json",
+      "bytes": 1443,
+      "sha256": "8e65f552edf8dd740e84e15e6b0b60870d00b7d027fb4ca4ecd3ea2de2e38afc"
+    },
+    {
+      "path": "style-presets/personal-editorial-focus.json",
+      "bytes": 1458,
+      "sha256": "efb9c0b44f008804ba79242fb16b00dbe9296d8d34a8551c8e0d8f332d6f5166"
+    },
+    {
+      "path": "style-presets/personal-signal-dynamic.json",
+      "bytes": 1454,
+      "sha256": "429084c4a750be65058c3114ec74452d9df50acdb70266f1f919ebce0abbf7da"
+    }
+  ],
+  "fileCountExcludingManifest": 56
+}

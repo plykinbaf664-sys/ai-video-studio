@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "baseline-unbranded",
+  "name": "Техническая база без брендбука",
+  "implementationStatus": "implemented",
+  "approvalStatus": "technical-baseline",
+  "brandbookId": null,
+  "referenceIds": [],
+  "assetIds": ["baseline-manrope-variable"],
+  "rules": {
+    "rhythm": { "source": "edit-plan", "keepCompleteWords": true, "minimumLeadMs": 120, "minimumTailMs": 120 },
+    "subtitles": { "maximumLines": 2, "maximumWordsPerGroup": 6, "maximumCharactersPerGroup": 44, "splitGapMs": 450, "tailMs": 140, "quotesFromRetainedSpeechOnly": true },
+    "graphics": { "components": ["subtitles", "quote-callout"], "maximumConcurrentFocus": 1, "insertionPolicy": "semantic_only" },
+    "motion": { "quoteFadeFrames": 3, "reframe": "none" },
+    "sound": { "preserveOriginalVoice": true, "music": "none", "soundEffects": "none" },
+    "transitions": { "kind": "cut", "durationFrames": 0 },
+    "framing": { "objectFit": "contain", "automaticSubjectDetection": false }
+  },
+  "design": {
+    "font": { "assetId": "baseline-manrope-variable", "family": "StudioBaselineManrope", "runtimeFile": "generated/assets/fonts/Manrope-Variable.ttf", "subtitleWeight": 600, "headingWeight": 700 },
+    "slot": { "x": 104, "y": 176, "width": 772, "maxHeight": 176 },
+    "safe": { "left": 96, "right": 180, "top": 140, "bottom": 300 },
+    "subtitle": { "preferredSize": 54, "minSize": 50, "lineHeight": 1.18 },
+    "heading": { "preferredSize": 64, "minSize": 60, "lineHeight": 1.1 },
+    "card": { "paddingX": 24, "paddingY": 16, "radius": 14, "background": "rgba(12, 16, 21, 0.84)", "text": "#ffffff", "border": "rgba(255,255,255,0.12)" }
+  }
+}

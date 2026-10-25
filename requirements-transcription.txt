@@ -1,0 +1,3 @@
+faster-whisper==1.2.1
+# Verified CPU runtime for this Windows / Intel Core i3 machine.
+ctranslate2==4.4.0

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "brutalist",
+  "name": "Brutalist",
+  "implementationStatus": "not_implemented",
+  "goal": "Подчеркнуть сильную прямую позицию",
+  "bestFor": "Манифест, провокационный тезис, критика",
+  "directorRules": {
+    "editingRhythm": "Жёсткие склейки и осмысленные стоп-кадры",
+    "subtitleDesign": "Очень крупная строгая типографика",
+    "motionLanguage": "Рубленые геометрические движения",
+    "graphicsAndBroll": "Одна сильная графическая метафора вместо множества",
+    "soundDesign": "Сухие точные акценты",
+    "avoid": "Наложения текста на лицо и бессмысленной агрессии",
+    "semanticPolicy": "Применять только при подтверждённой смысловой функции, не по регулярному таймеру."
+  },
+  "supportedVariantsToImplement": [
+    "restrained",
+    "balanced",
+    "intense"
+  ],
+  "demoStoryboard": [
+    {
+      "beat": 1,
+      "intention": "Жёсткое утверждение"
+    },
+    {
+      "beat": 2,
+      "intention": "Контрастная иллюстрация"
+    },
+    {
+      "beat": 3,
+      "intention": "Финальная фраза"
+    }
+  ],
+  "preview": {
+    "status": "not_rendered",
+    "renderWithSameSourceAsOtherPresets": true
+  }
+}

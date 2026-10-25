@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "luxury-editorial",
+  "name": "Luxury Editorial",
+  "implementationStatus": "not_implemented",
+  "goal": "Создать ощущение премиальности без перегруза",
+  "bestFor": "Премиальный продукт, позиционирование, история бренда",
+  "directorRules": {
+    "editingRhythm": "Выдержанные планы и ритмические длинные паузы",
+    "subtitleDesign": "Контрастная элегантная типографика, крупные заголовки",
+    "motionLanguage": "Плавные маски, деликатная глубина и параллакс",
+    "graphicsAndBroll": "Текстуры/фото только при наличии прав, продуманные композиции",
+    "soundDesign": "Тёплый ненавязчивый музыкальный рисунок",
+    "avoid": "Случайных золотых эффектов, пафосных клише",
+    "semanticPolicy": "Применять только при подтверждённой смысловой функции, не по регулярному таймеру."
+  },
+  "supportedVariantsToImplement": [
+    "restrained",
+    "balanced",
+    "intense"
+  ],
+  "demoStoryboard": [
+    {
+      "beat": 1,
+      "intention": "Крупная мысль на чистом фоне"
+    },
+    {
+      "beat": 2,
+      "intention": "Ненавязчивая предметная вставка"
+    },
+    {
+      "beat": 3,
+      "intention": "Премиальная лаконичная финальная карточка"
+    }
+  ],
+  "preview": {
+    "status": "not_rendered",
+    "renderWithSameSourceAsOtherPresets": true
+  }
+}

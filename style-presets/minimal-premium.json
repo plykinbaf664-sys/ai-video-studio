@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "minimal-premium",
+  "name": "Minimal Premium",
+  "implementationStatus": "not_implemented",
+  "goal": "Сдержанно подчеркнуть экспертность",
+  "bestFor": "Спокойная экспертная речь, продукты, тезисы",
+  "directorRules": {
+    "editingRhythm": "Редкие мотивированные склейки, дыхание сохраняется",
+    "subtitleDesign": "Тонкий гротеск, белый/нейтральный, короткие смысловые блоки",
+    "motionLanguage": "Мягкое плавное появление, умеренный reframe",
+    "graphicsAndBroll": "Геометрические карточки, минимум отвлекающего B-roll",
+    "soundDesign": "Чистый голос, очень тихая музыка или отсутствие",
+    "avoid": "Частых зумов, вспышек, пёстрых стикеров",
+    "semanticPolicy": "Применять только при подтверждённой смысловой функции, не по регулярному таймеру."
+  },
+  "supportedVariantsToImplement": [
+    "restrained",
+    "balanced",
+    "intense"
+  ],
+  "demoStoryboard": [
+    {
+      "beat": 1,
+      "intention": "Показать тезис коротким заголовком"
+    },
+    {
+      "beat": 2,
+      "intention": "Уточнить вторую мысль чистой схемой"
+    },
+    {
+      "beat": 3,
+      "intention": "Завершить спокойной паузой"
+    }
+  ],
+  "preview": {
+    "status": "not_rendered",
+    "renderWithSameSourceAsOtherPresets": true
+  }
+}

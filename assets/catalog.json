@@ -1,0 +1,528 @@
+{
+  "schemaVersion": "1.0.0",
+  "items": [
+    {
+      "id": "baseline-manrope-variable",
+      "kind": "font",
+      "path": "assets/fonts/manrope/Manrope-Variable.ttf",
+      "sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6",
+      "runtimeFile": "generated/assets/fonts/Manrope-Variable.ttf",
+      "usage": "technical-baseline",
+      "license": {
+        "label": "SIL Open Font License 1.1",
+        "file": "assets/fonts/manrope/OFL.txt",
+        "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/Manrope%5Bwght%5D.ttf"
+      }
+    },
+    {
+      "id": "personal-onest",
+      "kind": "font",
+      "path": "assets/library/fonts/Onest/Onest-Variable.ttf",
+      "sha256": "966c5c29b4755da84b6854d5c21dd4eaa2420225d0e9874de602de176d4a9f31",
+      "usage": "candidate",
+      "license": {
+        "label": "SIL Open Font License 1.1",
+        "file": "assets/library/fonts/Onest/OFL.txt",
+        "source": "https://github.com/google/fonts/tree/main/ofl/onest"
+      },
+      "runtimeFile": "generated/assets/fonts/personal-onest.ttf"
+    },
+    {
+      "id": "personal-inter",
+      "kind": "font",
+      "path": "assets/library/fonts/Inter/InterVariable.ttf",
+      "sha256": "4989b125924991b90d05b2d16e0e388c48f7d5bb8b30539bbf9c755278d0ccaf",
+      "usage": "candidate",
+      "license": {
+        "label": "SIL Open Font License 1.1",
+        "file": "assets/library/fonts/Inter/OFL.txt",
+        "source": "https://github.com/rsms/inter"
+      },
+      "runtimeFile": "generated/assets/fonts/personal-inter.ttf"
+    },
+    {
+      "id": "personal-semantic-brackets",
+      "kind": "graphic",
+      "path": "assets/library/graphics/semantic-brackets.svg",
+      "sha256": "5a03e3ea7644088aabecc077ebfeb371a0bda46157a96ed6bae3459be834e47d",
+      "usage": "candidate",
+      "license": {
+        "label": "Original project-owned artwork / synthesized SFX",
+        "file": "assets/library/LICENSES_AND_SOURCES.md",
+        "source": "original for this project"
+      }
+    },
+    {
+      "id": "personal-soft-ui-tick",
+      "kind": "audio",
+      "path": "assets/library/sfx/soft-ui-tick.wav",
+      "sha256": "3893d944d36de44cfe4c22d5f11115a7fab2b3f7f6fca7a98d1e955a18d7a110",
+      "usage": "candidate",
+      "license": {
+        "label": "Original project-owned artwork / synthesized SFX",
+        "file": "assets/library/LICENSES_AND_SOURCES.md",
+        "source": "procedurally synthesized original"
+      }
+    },
+    {
+      "id": "personal-semantic-mark",
+      "kind": "audio",
+      "path": "assets/library/sfx/semantic-mark.wav",
+      "sha256": "dc16494dc3cbcd2b7445631cef14b76f47d89cbcdc79ed977bebcb8162d523ba",
+      "usage": "candidate",
+      "license": {
+        "label": "Original project-owned artwork / synthesized SFX",
+        "file": "assets/library/LICENSES_AND_SOURCES.md",
+        "source": "procedurally synthesized original"
+      }
+    },
+    {
+      "id": "personal-dry-punct",
+      "kind": "audio",
+      "path": "assets/library/sfx/dry-punct.wav",
+      "sha256": "b81f3d2a80ddf2797c58a0be4ceb0030821664b5d00feb49b2096e7cfed270c8",
+      "usage": "candidate",
+      "license": {
+        "label": "Original project-owned artwork / synthesized SFX",
+        "file": "assets/library/LICENSES_AND_SOURCES.md",
+        "source": "procedurally synthesized original"
+      }
+    },
+    {
+      "id": "personal-quiet-swish",
+      "kind": "audio",
+      "path": "assets/library/sfx/quiet-swish.wav",
+      "sha256": "ccadb6000e196ec37ad0c97779acd618a5be0026fd71ca53d5b3eb4063a9587c",
+      "usage": "candidate",
+      "license": {
+        "label": "Original project-owned artwork / synthesized SFX",
+        "file": "assets/library/LICENSES_AND_SOURCES.md",
+        "source": "procedurally synthesized original"
+      }
+    },
+    {
+      "id": "music-feedback-dreams",
+      "kind": "audio",
+      "path": "assets/library/music/mixkit-feedback-dreams-588.mp3",
+      "sha256": "13dff735e4cc2cc0a36c29f3492d92799f8f14f1d9ddae28a8bcf2544cc1470c",
+      "usage": "candidate",
+      "license": {
+        "label": "User-provided Mixkit named item; Stock Music Free terms retrieved; provenance caveat recorded",
+        "file": "assets/library/music/licenses/Mixkit-Stock-Music-Free.html",
+        "source": "https://mixkit.co/license/modal/musicFree/"
+      }
+    },
+    {
+      "id": "music-hip-hop-02",
+      "kind": "audio",
+      "path": "assets/library/music/mixkit-hip-hop-02-738.mp3",
+      "sha256": "4b7bc45aedd38bf43e67d550177aeaafa367ec32a3a6498f8ffd9ec5132e268e",
+      "usage": "candidate",
+      "license": {
+        "label": "User-provided Mixkit named item; Stock Music Free terms retrieved; provenance caveat recorded",
+        "file": "assets/library/music/licenses/Mixkit-Stock-Music-Free.html",
+        "source": "https://mixkit.co/license/modal/musicFree/"
+      }
+    },
+    {
+      "id": "music-relax-beat",
+      "kind": "audio",
+      "path": "assets/library/music/mixkit-relax-beat-292.mp3",
+      "sha256": "7e160d5dc09f99b24a2f48c50aa1b2f78701fccdc3b7f5412368f4283df19375",
+      "usage": "candidate",
+      "license": {
+        "label": "User-provided Mixkit named item; Stock Music Free terms retrieved; provenance caveat recorded",
+        "file": "assets/library/music/licenses/Mixkit-Stock-Music-Free.html",
+        "source": "https://mixkit.co/license/modal/musicFree/"
+      }
+    },
+    {
+      "id": "music-vastness",
+      "kind": "audio",
+      "path": "assets/library/music/mixkit-vastness-184.mp3",
+      "sha256": "3ffae7ccd5ea6f612f75efdf9a8318ccce79a5e4f355b26e233631330a57660f",
+      "usage": "candidate",
+      "license": {
+        "label": "User-provided Mixkit named item; Stock Music Free terms retrieved; provenance caveat recorded",
+        "file": "assets/library/music/licenses/Mixkit-Stock-Music-Free.html",
+        "source": "https://mixkit.co/license/modal/musicFree/"
+      }
+    },
+    {
+      "id": "domestic-dishes-v1",
+      "kind": "graphic",
+      "path": "assets/library/visuals/domestic-dishes-v1/illustration.png",
+      "sha256": "c7fd1a8f3e38b1087803a9b49f4fb37178e3ccaade23a853126b542c8c4dc6d7",
+      "usage": "candidate",
+      "runtimeFile": "generated/assets/visuals/domestic-dishes-v1.png",
+      "license": {
+        "label": "AI-generated fictional artwork; provenance retained",
+        "file": "assets/library/visuals/domestic-dishes-v1/provenance.json",
+        "source": "Built-in image_gen, 2026-10-25"
+      },
+      "visual": {
+        "version": 1,
+        "kind": "illustration",
+        "domains": [
+          "domestic",
+          "general"
+        ],
+        "intents": [
+          "contrast"
+        ],
+        "styles": [
+          "dry-irony",
+          "signal-dynamic",
+          "editorial-focus"
+        ],
+        "tags": [
+          "посуда",
+          "посуду",
+          "быт",
+          "dishwashing",
+          "кухня",
+          "ирония"
+        ],
+        "rights": "generated",
+        "provenanceFile": "assets/library/visuals/domestic-dishes-v1/provenance.json",
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "id": "diagram-process-v1",
+      "kind": "graphic",
+      "path": "assets/library/visuals/diagram-process-v1/template.json",
+      "sha256": "95594ebbea151e1301b55f2d0ed15b9734c62a2a5109da62f279f7343b32ea0c",
+      "usage": "candidate",
+      "license": {
+        "label": "Original project component",
+        "file": "assets/library/visuals/diagram-process-v1/provenance.json",
+        "source": "Original for this project"
+      },
+      "visual": {
+        "version": 1,
+        "kind": "template",
+        "template": "process",
+        "domains": [
+          "ai",
+          "general"
+        ],
+        "intents": [
+          "explain-process"
+        ],
+        "styles": [
+          "dry-irony",
+          "signal-dynamic",
+          "editorial-focus"
+        ],
+        "tags": [
+          "процесс",
+          "ИИ",
+          "шаги",
+          "pipeline"
+        ],
+        "rights": "project-original",
+        "provenanceFile": "assets/library/visuals/diagram-process-v1/provenance.json"
+      }
+    },
+    {
+      "id": "diagram-comparison-v1",
+      "kind": "graphic",
+      "path": "assets/library/visuals/diagram-comparison-v1/template.json",
+      "sha256": "b05f255352afff2fa5393c65826548b4f41ef36e5c9cd555d0f74c0f0cd16762",
+      "usage": "candidate",
+      "license": {
+        "label": "Original project component",
+        "file": "assets/library/visuals/diagram-comparison-v1/provenance.json",
+        "source": "Original for this project"
+      },
+      "visual": {
+        "version": 1,
+        "kind": "template",
+        "template": "comparison",
+        "domains": [
+          "ai",
+          "general"
+        ],
+        "intents": [
+          "compare"
+        ],
+        "styles": [
+          "dry-irony",
+          "signal-dynamic",
+          "editorial-focus"
+        ],
+        "tags": [
+          "сравнение",
+          "до",
+          "после",
+          "выбор"
+        ],
+        "rights": "project-original",
+        "provenanceFile": "assets/library/visuals/diagram-comparison-v1/provenance.json"
+      }
+    },
+    {
+      "id": "diagram-system-v1",
+      "kind": "graphic",
+      "path": "assets/library/visuals/diagram-system-v1/template.json",
+      "sha256": "d82ed6137450f94d149a852235a3b5930429ba5ae0a098082e4976d39e2eba86",
+      "usage": "candidate",
+      "license": {
+        "label": "Original project component",
+        "file": "assets/library/visuals/diagram-system-v1/provenance.json",
+        "source": "Original for this project"
+      },
+      "visual": {
+        "version": 1,
+        "kind": "template",
+        "template": "system",
+        "domains": [
+          "ai",
+          "general"
+        ],
+        "intents": [
+          "explain-system"
+        ],
+        "styles": [
+          "dry-irony",
+          "signal-dynamic",
+          "editorial-focus"
+        ],
+        "tags": [
+          "система",
+          "связи",
+          "архитектура",
+          "ИИ"
+        ],
+        "rights": "project-original",
+        "provenanceFile": "assets/library/visuals/diagram-system-v1/provenance.json"
+      }
+    },
+    {
+      "id": "domestic-photo-dishes-v1",
+      "kind": "graphic",
+      "path": "assets/library/visuals/domestic-photo-dishes-v1/illustration.png",
+      "sha256": "c9743834a94de267a99e49a703d98783ed72338c73879c9358692900ddd7b14e",
+      "usage": "candidate",
+      "runtimeFile": "generated/assets/visuals/domestic-photo-dishes-v1.png",
+      "license": {
+        "label": "AI-generated fictional artwork; provenance and terms review",
+        "file": "assets/library/visuals/domestic-photo-dishes-v1/provenance.json",
+        "source": "Built-in image_gen, 2026-10-25; generic fictional family photographs"
+      },
+      "visual": {
+        "version": 1,
+        "kind": "illustration",
+        "domains": [
+          "domestic",
+          "general"
+        ],
+        "intents": [
+          "contrast"
+        ],
+        "styles": [
+          "dry-irony",
+          "signal-dynamic",
+          "editorial-focus"
+        ],
+        "tags": [
+          "dishwashing",
+          "быт",
+          "семья",
+          "посуду"
+        ],
+        "rights": "generated",
+        "provenanceFile": "assets/library/visuals/domestic-photo-dishes-v1/provenance.json",
+        "width": 1672,
+        "height": 941,
+        "aesthetic": "photographic",
+        "subjects": [
+          "dishwashing"
+        ],
+        "castId": "family-candid-a",
+        "photoSafety": {
+          "width": 1672,
+          "height": 941,
+          "protectedRegions": [
+            {
+              "x": 0.17,
+              "y": 0.07,
+              "width": 0.64,
+              "height": 0.78
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "domestic-photo-dinner-v1",
+      "kind": "graphic",
+      "path": "assets/library/visuals/domestic-photo-dinner-v1/illustration.png",
+      "sha256": "1528d8c8122b5c73cfc43779f83cfff258fdee043dd73002e0e54be09b031984",
+      "usage": "candidate",
+      "runtimeFile": "generated/assets/visuals/domestic-photo-dinner-v1.png",
+      "license": {
+        "label": "AI-generated fictional artwork; provenance and terms review",
+        "file": "assets/library/visuals/domestic-photo-dinner-v1/provenance.json",
+        "source": "Built-in image_gen, 2026-10-25; generic fictional family photographs"
+      },
+      "visual": {
+        "version": 1,
+        "kind": "illustration",
+        "domains": [
+          "domestic",
+          "general"
+        ],
+        "intents": [
+          "contrast"
+        ],
+        "styles": [
+          "dry-irony",
+          "signal-dynamic",
+          "editorial-focus"
+        ],
+        "tags": [
+          "cooking",
+          "быт",
+          "семья",
+          "ужин"
+        ],
+        "rights": "generated",
+        "provenanceFile": "assets/library/visuals/domestic-photo-dinner-v1/provenance.json",
+        "width": 941,
+        "height": 1672,
+        "aesthetic": "photographic",
+        "subjects": [
+          "cooking"
+        ],
+        "castId": "family-candid-a",
+        "photoSafety": {
+          "width": 941,
+          "height": 1672,
+          "protectedRegions": [
+            {
+              "x": 0.04,
+              "y": 0.105,
+              "width": 0.94,
+              "height": 0.52
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "domestic-photo-repair-v1",
+      "kind": "graphic",
+      "path": "assets/library/visuals/domestic-photo-repair-v1/illustration.png",
+      "sha256": "a5edad40fdbc1027a485c7d1e15b27d8f19fecb1709ed3085d027941957cac50",
+      "usage": "candidate",
+      "runtimeFile": "generated/assets/visuals/domestic-photo-repair-v1.png",
+      "license": {
+        "label": "AI-generated fictional artwork; provenance and terms review",
+        "file": "assets/library/visuals/domestic-photo-repair-v1/provenance.json",
+        "source": "Built-in image_gen, 2026-10-25; generic fictional family photographs"
+      },
+      "visual": {
+        "version": 1,
+        "kind": "illustration",
+        "domains": [
+          "domestic",
+          "general"
+        ],
+        "intents": [
+          "contrast"
+        ],
+        "styles": [
+          "dry-irony",
+          "signal-dynamic",
+          "editorial-focus"
+        ],
+        "tags": [
+          "bathroom-repair",
+          "быт",
+          "семья",
+          "ванной"
+        ],
+        "rights": "generated",
+        "provenanceFile": "assets/library/visuals/domestic-photo-repair-v1/provenance.json",
+        "width": 1672,
+        "height": 941,
+        "aesthetic": "photographic",
+        "subjects": [
+          "bathroom-repair"
+        ],
+        "castId": "family-candid-a",
+        "photoSafety": {
+          "width": 1672,
+          "height": 941,
+          "protectedRegions": [
+            {
+              "x": 0.18,
+              "y": 0.03,
+              "width": 0.67,
+              "height": 0.85
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "domestic-photo-laundry-v1",
+      "kind": "graphic",
+      "path": "assets/library/visuals/domestic-photo-laundry-v1/illustration.png",
+      "sha256": "437154f44c6924df16b6bed6368bd1ee46aa24fef828011b71322d48a5c66be5",
+      "usage": "candidate",
+      "runtimeFile": "generated/assets/visuals/domestic-photo-laundry-v1.png",
+      "license": {
+        "label": "AI-generated fictional artwork; provenance and terms review",
+        "file": "assets/library/visuals/domestic-photo-laundry-v1/provenance.json",
+        "source": "Built-in image_gen, 2026-10-25; generic fictional family photographs"
+      },
+      "visual": {
+        "version": 1,
+        "kind": "illustration",
+        "domains": [
+          "domestic",
+          "general"
+        ],
+        "intents": [
+          "contrast"
+        ],
+        "styles": [
+          "dry-irony",
+          "signal-dynamic",
+          "editorial-focus"
+        ],
+        "tags": [
+          "laundry-hanging",
+          "быт",
+          "семья",
+          "бельё"
+        ],
+        "rights": "generated",
+        "provenanceFile": "assets/library/visuals/domestic-photo-laundry-v1/provenance.json",
+        "width": 1672,
+        "height": 941,
+        "aesthetic": "photographic",
+        "subjects": [
+          "laundry-hanging"
+        ],
+        "castId": "family-candid-a",
+        "photoSafety": {
+          "width": 1672,
+          "height": 941,
+          "protectedRegions": [
+            {
+              "x": 0.12,
+              "y": 0.03,
+              "width": 0.78,
+              "height": 0.86
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

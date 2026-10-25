@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "items": [
+    {
+      "id": "personal-design-kit",
+      "name": "Personal Design Kit v1.0 — candidate",
+      "approvalStatus": "draft",
+      "source": {
+        "file": "brandbooks/media/BRANDBOOK.md",
+        "sha256": "b2b968da3e2dfd3809d5e55bd3dafcc424c3c770a4ca7e2c9e65e74d84676d6b"
+      },
+      "fontAssetIds": [
+        "personal-onest",
+        "personal-inter"
+      ],
+      "palette": [
+        "#111319",
+        "#F6F3EC",
+        "#E87942",
+        "#6F8B73"
+      ],
+      "restrictions": [
+        "Two subtitle lines; one current speech layer",
+        "References are analysis-only",
+        "No unlicensed music; no random effects"
+      ]
+    }
+  ]
+}

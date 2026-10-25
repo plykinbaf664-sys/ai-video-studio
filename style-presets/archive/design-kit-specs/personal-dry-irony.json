@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "personal-dry-irony",
+  "name": "Dry Irony",
+  "implementationStatus": "component_source_provided_not_runtime_verified",
+  "scope": "user personal brand",
+  "brandbook": "brandbooks/media/BRANDBOOK.md",
+  "mood": "ironic",
+  "summary": "Холодная серьёзная форма и точная ироничная фраза.",
+  "direction": {
+    "rhythm": "pause-and-punch",
+    "density": "low",
+    "cuts": "hold-punchline",
+    "audio": "silence-plus-one-dry-accent",
+    "visualEvidence": "single-deadpan-label-or-quote",
+    "avoid": [
+      "emoji comedy",
+      "funny sound every second",
+      "meme overlays"
+    ],
+    "bestFor": [
+      "провокация",
+      "сарказм",
+      "контраргумент"
+    ]
+  },
+  "typography": {
+    "heroPosition": "top",
+    "captionPosition": "bottom",
+    "heroWeight": 740,
+    "heroSizePx1080x1920": 68,
+    "baselineFont": "Onest",
+    "capsNotAlwaysRequired": true
+  },
+  "colorProfile": "brandbooks/media/palette.json",
+  "signatureElement": "editorial",
+  "demoCompId": "AIVS-Irony",
+  "sourceRules": [
+    "audible-first captions",
+    "original and final timeline mapping",
+    "no baked-in subtitle duplicates",
+    "spatial safety zones",
+    "licensed assets only"
+  ],
+  "constraints": {
+    "previewTextOnly": true,
+    "requiresActualSourceVideoForRealMontage": true,
+    "notACompleteAutomaticEditor": true
+  }
+}

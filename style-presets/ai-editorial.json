@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "ai-editorial",
+  "name": "AI Editorial",
+  "implementationStatus": "not_implemented",
+  "goal": "Показать технологические понятия без фальшивых интерфейсов",
+  "bestFor": "AI, автоматизация, новые продукты",
+  "directorRules": {
+    "editingRhythm": "Темп объяснения с остановкой на UI или схеме",
+    "subtitleDesign": "Геометричный нейтральный текст, технические пометки",
+    "motionLanguage": "Слои панелей, сетки, выделение элементов",
+    "graphicsAndBroll": "Схемы потоков и интерфейсы только из реального UI или как явно концепт",
+    "soundDesign": "Чистые цифровые сигналы в меру",
+    "avoid": "Выдуманных демонстраций работающих продуктов",
+    "semanticPolicy": "Применять только при подтверждённой смысловой функции, не по регулярному таймеру."
+  },
+  "supportedVariantsToImplement": [
+    "restrained",
+    "balanced",
+    "intense"
+  ],
+  "demoStoryboard": [
+    {
+      "beat": 1,
+      "intention": "Проблема, как схема"
+    },
+    {
+      "beat": 2,
+      "intention": "Демонстрация настоящего шага"
+    },
+    {
+      "beat": 3,
+      "intention": "Результат и границы"
+    }
+  ],
+  "preview": {
+    "status": "not_rendered",
+    "renderWithSameSourceAsOtherPresets": true
+  }
+}

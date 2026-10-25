@@ -1,0 +1,616 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.ai-video-studio/contracts/director-response.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "requestId",
+    "contextSha256",
+    "authorship",
+    "observationsUsed",
+    "treatments",
+    "recommendation"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "requestId": {
+      "$ref": "#/$defs/id"
+    },
+    "contextSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "authorship": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "name"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "baseline-adaptation",
+            "editor-authored",
+            "provider"
+          ]
+        },
+        "name": {
+          "$ref": "#/$defs/text"
+        }
+      }
+    },
+    "observationsUsed": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 12,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/text"
+      }
+    },
+    "treatments": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "$ref": "#/$defs/treatment"
+      }
+    },
+    "recommendation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "treatmentId",
+        "reason"
+      ],
+      "properties": {
+        "treatmentId": {
+          "$ref": "#/$defs/id"
+        },
+        "reason": {
+          "$ref": "#/$defs/text"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "maxLength": 64,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000,
+      "pattern": "\\S"
+    },
+    "range": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "firstWordId",
+        "lastWordId"
+      ],
+      "properties": {
+        "firstWordId": {
+          "$ref": "#/$defs/id"
+        },
+        "lastWordId": {
+          "$ref": "#/$defs/id"
+        }
+      }
+    },
+    "anchor": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "timeline",
+            "kind",
+            "unitId",
+            "offsetFrames"
+          ],
+          "properties": {
+            "timeline": {
+              "const": "output"
+            },
+            "kind": {
+              "const": "unit-start"
+            },
+            "unitId": {
+              "$ref": "#/$defs/id"
+            },
+            "offsetFrames": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 60
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "timeline",
+            "kind",
+            "wordId",
+            "offsetFrames"
+          ],
+          "properties": {
+            "timeline": {
+              "const": "output"
+            },
+            "kind": {
+              "const": "after-word"
+            },
+            "wordId": {
+              "$ref": "#/$defs/id"
+            },
+            "offsetFrames": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 60
+            }
+          }
+        }
+      ]
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "referenceId",
+        "startMs",
+        "endMs"
+      ],
+      "properties": {
+        "referenceId": {
+          "$ref": "#/$defs/id"
+        },
+        "startMs": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "endMs": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "beat": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "role",
+        "unitIds",
+        "intent",
+        "evidence",
+        "uncertainty"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "role": {
+          "enum": [
+            "hook",
+            "example",
+            "explanation",
+            "turn",
+            "payoff"
+          ]
+        },
+        "unitIds": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 100,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "intent": {
+          "$ref": "#/$defs/text"
+        },
+        "evidence": {
+          "$ref": "#/$defs/range"
+        },
+        "uncertainty": {
+          "$ref": "#/$defs/text"
+        }
+      }
+    },
+    "scene": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "anchor",
+        "purpose",
+        "evidence",
+        "reference",
+        "quotes"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "enum": [
+                  "speaker",
+                  "quote",
+                  "full"
+                ]
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "quotes": {
+                "type": "array",
+                "maxItems": 0
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "split"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "quotes": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 3
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "comparison"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "quotes": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "enum": [
+            "speaker",
+            "quote",
+            "split",
+            "comparison",
+            "full"
+          ]
+        },
+        "anchor": {
+          "$ref": "#/$defs/anchor"
+        },
+        "purpose": {
+          "$ref": "#/$defs/text"
+        },
+        "evidence": {
+          "$ref": "#/$defs/range"
+        },
+        "reference": {
+          "$ref": "#/$defs/reference"
+        },
+        "quotes": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "$ref": "#/$defs/range"
+          }
+        }
+      }
+    },
+    "treatment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "thesis",
+        "emotionalArc",
+        "whyThisWorks",
+        "beats",
+        "omissions",
+        "scenes",
+        "productionNeeds",
+        "selfReview"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "$ref": "#/$defs/text"
+        },
+        "thesis": {
+          "$ref": "#/$defs/text"
+        },
+        "emotionalArc": {
+          "$ref": "#/$defs/text"
+        },
+        "whyThisWorks": {
+          "$ref": "#/$defs/text"
+        },
+        "beats": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 100,
+          "items": {
+            "$ref": "#/$defs/beat"
+          }
+        },
+        "omissions": {
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "unitId",
+              "reason"
+            ],
+            "properties": {
+              "unitId": {
+                "$ref": "#/$defs/id"
+              },
+              "reason": {
+                "$ref": "#/$defs/text"
+              }
+            }
+          }
+        },
+        "scenes": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 100,
+          "items": {
+            "$ref": "#/$defs/scene"
+          }
+        },
+        "productionNeeds": {
+          "type": "array",
+          "maxItems": 30,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "capability",
+              "reason",
+              "evidence",
+              "fallbackSceneId"
+            ],
+            "properties": {
+              "capability": {
+                "enum": [
+                  "diagram",
+                  "3d",
+                  "icons",
+                  "broll",
+                  "automatic-color",
+                  "face-tracking"
+                ]
+              },
+              "reason": {
+                "$ref": "#/$defs/text"
+              },
+              "evidence": {
+                "$ref": "#/$defs/range"
+              },
+              "fallbackSceneId": {
+                "$ref": "#/$defs/id"
+              }
+            }
+          }
+        },
+        "selfReview": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 30,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "risk",
+              "mitigation"
+            ],
+            "properties": {
+              "risk": {
+                "$ref": "#/$defs/text"
+              },
+              "mitigation": {
+                "$ref": "#/$defs/text"
+              }
+            }
+          }
+        },
+        "visuals": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "domain",
+            "restraint",
+            "beats"
+          ],
+          "properties": {
+            "domain": {
+              "enum": [
+                "domestic",
+                "ai",
+                "general"
+              ]
+            },
+            "restraint": {
+              "$ref": "#/$defs/text"
+            },
+            "beats": {
+              "type": "array",
+              "maxItems": 12,
+              "items": {
+                "$ref": "#/$defs/visualCue"
+              }
+            },
+            "policy": {
+              "const": "domestic-counterpoint-v1"
+            }
+          }
+        }
+      }
+    },
+    "visualNode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label",
+        "role",
+        "evidence"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 32
+        },
+        "role": {
+          "enum": [
+            "editorial-explanation",
+            "quote-reprise"
+          ]
+        },
+        "evidence": {
+          "$ref": "#/$defs/range"
+        }
+      }
+    },
+    "visualCue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "unitId",
+        "assetId",
+        "intent",
+        "layout",
+        "evidence",
+        "why"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "unitId": {
+          "$ref": "#/$defs/id"
+        },
+        "assetId": {
+          "$ref": "#/$defs/id"
+        },
+        "intent": {
+          "enum": [
+            "contrast",
+            "explain-process",
+            "compare",
+            "explain-system"
+          ]
+        },
+        "layout": {
+          "enum": [
+            "upper-panel",
+            "cutaway"
+          ]
+        },
+        "evidence": {
+          "$ref": "#/$defs/range"
+        },
+        "why": {
+          "$ref": "#/$defs/text"
+        },
+        "nodes": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 4,
+          "items": {
+            "$ref": "#/$defs/visualNode"
+          }
+        },
+        "edges": {
+          "type": "array",
+          "maxItems": 6,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "from",
+              "to"
+            ],
+            "properties": {
+              "from": {
+                "$ref": "#/$defs/id"
+              },
+              "to": {
+                "$ref": "#/$defs/id"
+              }
+            }
+          }
+        },
+        "presentation": {
+          "const": "family-photo"
+        },
+        "subject": {
+          "enum": [
+            "dishwashing",
+            "cooking",
+            "bathroom-repair",
+            "laundry-hanging"
+          ]
+        },
+        "seriesId": {
+          "$ref": "#/$defs/id"
+        }
+      }
+    }
+  }
+}

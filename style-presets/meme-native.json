@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "meme-native",
+  "name": "Meme Native",
+  "implementationStatus": "not_implemented",
+  "goal": "Усилить юмор и сарказм",
+  "bestFor": "Ироничные обзоры, реакция на абсурд",
+  "directorRules": {
+    "editingRhythm": "Комедийная пауза и внезапная склейка по ударной реплике",
+    "subtitleDesign": "Мемные надписи умеренно",
+    "motionLanguage": "Freeze frame, jump cut и комедийный zoom",
+    "graphicsAndBroll": "Реакции и отсылки только разрешённые и релевантные",
+    "soundDesign": "Тишина перед панчлайном, уместные SFX",
+    "avoid": "Случайных заимствованных мемов с нарушением прав",
+    "semanticPolicy": "Применять только при подтверждённой смысловой функции, не по регулярному таймеру."
+  },
+  "supportedVariantsToImplement": [
+    "restrained",
+    "balanced",
+    "intense"
+  ],
+  "demoStoryboard": [
+    {
+      "beat": 1,
+      "intention": "Подводка к ожиданию"
+    },
+    {
+      "beat": 2,
+      "intention": "Контраст ожидания и реальности"
+    },
+    {
+      "beat": 3,
+      "intention": "Панчлайн"
+    }
+  ],
+  "preview": {
+    "status": "not_rendered",
+    "renderWithSameSourceAsOtherPresets": true
+  }
+}

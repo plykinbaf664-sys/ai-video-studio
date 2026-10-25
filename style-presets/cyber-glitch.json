@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "cyber-glitch",
+  "name": "Cyber Glitch",
+  "implementationStatus": "not_implemented",
+  "goal": "Передать цифровое напряжение",
+  "bestFor": "Кибертемы, сбои, технологические конфликты",
+  "directorRules": {
+    "editingRhythm": "Динамические контрасты, паузы после перегруза",
+    "subtitleDesign": "Техническая моноширинная типографика",
+    "motionLanguage": "Контролируемый glitch краткими вставками",
+    "graphicsAndBroll": "Терминальные визуалы как концепт, не реальные логи",
+    "soundDesign": "Умеренная электронная перкуссия",
+    "avoid": "Бесконечных флэш-эффектов и нечитаемого текста",
+    "semanticPolicy": "Применять только при подтверждённой смысловой функции, не по регулярному таймеру."
+  },
+  "supportedVariantsToImplement": [
+    "restrained",
+    "balanced",
+    "intense"
+  ],
+  "demoStoryboard": [
+    {
+      "beat": 1,
+      "intention": "Ощущение сбоя"
+    },
+    {
+      "beat": 2,
+      "intention": "Объяснение причины"
+    },
+    {
+      "beat": 3,
+      "intention": "Система стабилизируется"
+    }
+  ],
+  "preview": {
+    "status": "not_rendered",
+    "renderWithSameSourceAsOtherPresets": true
+  }
+}

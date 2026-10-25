@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "personal-editorial-focus",
+  "name": "Editorial Focus",
+  "implementationStatus": "implemented",
+  "approvalStatus": "candidate",
+  "brandbookId": "personal-design-kit",
+  "referenceIds": [
+    "personal-ref-img-3303-jpeg",
+    "personal-ref-img-3304-jpeg",
+    "personal-ref-img-3305-jpeg",
+    "personal-ref-img-3306-jpeg",
+    "personal-ref-img-3307-jpeg",
+    "personal-ref-img-3308-jpeg",
+    "personal-ref-img-3309-jpeg",
+    "personal-ref-img-3310-jpeg",
+    "personal-ref-img-3311-jpeg",
+    "personal-ref-img-3312-jpeg",
+    "personal-ref-img-3313-jpeg",
+    "personal-ref-img-3314-jpeg",
+    "personal-ref-img-3315-jpeg",
+    "personal-ref-img-3316-jpeg",
+    "personal-ref-img-3317-jpeg"
+  ],
+  "assetIds": [
+    "personal-onest",
+    "personal-inter",
+    "personal-semantic-brackets",
+    "personal-soft-ui-tick",
+    "personal-semantic-mark",
+    "personal-dry-punct",
+    "personal-quiet-swish"
+  ],
+  "rules": {
+    "rhythm": {
+      "source": "edit-plan",
+      "keepCompleteWords": true,
+      "minimumLeadMs": 120,
+      "minimumTailMs": 120
+    },
+    "subtitles": {
+      "maximumLines": 2,
+      "maximumWordsPerGroup": 6,
+      "maximumCharactersPerGroup": 44,
+      "splitGapMs": 450,
+      "tailMs": 140,
+      "quotesFromRetainedSpeechOnly": true
+    },
+    "graphics": {
+      "components": [
+        "subtitles",
+        "quote-callout",
+        "semantic-brackets"
+      ],
+      "maximumConcurrentFocus": 1,
+      "insertionPolicy": "semantic_only"
+    },
+    "motion": {
+      "quoteFadeFrames": 9,
+      "reframe": "none"
+    },
+    "sound": {
+      "preserveOriginalVoice": true,
+      "music": "none",
+      "soundEffects": "none"
+    },
+    "transitions": {
+      "kind": "cut",
+      "durationFrames": 0
+    },
+    "framing": {
+      "objectFit": "contain",
+      "automaticSubjectDetection": false
+    }
+  },
+  "design": {
+    "font": {
+      "assetId": "personal-onest",
+      "family": "PersonalOnest",
+      "runtimeFile": "generated/assets/fonts/personal-onest.ttf",
+      "subtitleWeight": 600,
+      "headingWeight": 720
+    },
+    "slot": {
+      "x": 104,
+      "y": 168,
+      "width": 772,
+      "maxHeight": 184
+    },
+    "safe": {
+      "left": 96,
+      "right": 180,
+      "top": 140,
+      "bottom": 300
+    },
+    "subtitle": {
+      "preferredSize": 54,
+      "minSize": 50,
+      "lineHeight": 1.16
+    },
+    "heading": {
+      "preferredSize": 66,
+      "minSize": 60,
+      "lineHeight": 1.1
+    },
+    "card": {
+      "paddingX": 24,
+      "paddingY": 14,
+      "radius": 8,
+      "background": "rgba(17,19,25,0.90)",
+      "text": "#F6F3EC",
+      "border": "rgba(246,243,236,0.16)"
+    }
+  }
+}

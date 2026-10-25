@@ -1,0 +1,265 @@
+{
+  "version": 1,
+  "id": "dry-irony-tight",
+  "presetId": "dry-irony",
+  "sourceSha256": "7db3f25c076c82732d8481c37233ac0d017c0ab70923ae233e1f198cecac471c",
+  "transcriptFile": "public/generated/reference-edit/edit.json",
+  "source": {
+    "width": 720,
+    "height": 1280,
+    "face": {
+      "x": 220,
+      "y": 260,
+      "width": 300,
+      "height": 420
+    },
+    "verificationRoi": {
+      "x": 260,
+      "y": 430,
+      "width": 220,
+      "height": 220
+    }
+  },
+  "cuts": [
+    {
+      "id": "hook",
+      "start": 0.2,
+      "end": 3.6666666666666665,
+      "purpose": "Preserve complete source words with quiet consonant/tail padding; shorten waiting."
+    },
+    {
+      "id": "dishes",
+      "start": 8.4,
+      "end": 10.366666666666667,
+      "purpose": "Preserve complete source words with quiet consonant/tail padding; shorten waiting."
+    },
+    {
+      "id": "dinner",
+      "start": 13.733333333333333,
+      "end": 15.666666666666666,
+      "purpose": "Preserve complete source words with quiet consonant/tail padding; shorten waiting."
+    },
+    {
+      "id": "repair",
+      "start": 21.066666666666666,
+      "end": 23.633333333333333,
+      "purpose": "Preserve complete source words with quiet consonant/tail padding; shorten waiting."
+    },
+    {
+      "id": "independence",
+      "start": 27.866666666666667,
+      "end": 30.866666666666667,
+      "purpose": "Preserve complete source words with quiet consonant/tail padding; shorten waiting."
+    },
+    {
+      "id": "payoff-start",
+      "start": 38.266666666666666,
+      "end": 39.8,
+      "purpose": "Preserve complete source words with quiet consonant/tail padding; shorten waiting."
+    },
+    {
+      "id": "payoff-end",
+      "start": 40.1,
+      "end": 43.9,
+      "purpose": "Preserve complete source words with quiet consonant/tail padding; shorten waiting."
+    }
+  ],
+  "scenes": [
+    {
+      "from": 0,
+      "kind": "speaker",
+      "purpose": "Сначала тезис и лицо, без преждевременных выводов.",
+      "reference": "img-3321:10.5–12"
+    },
+    {
+      "from": 104,
+      "kind": "quote",
+      "purpose": "Первый контрпример — крупная текущая речь под портретом, не второй слой.",
+      "reference": "img-3321:159"
+    },
+    {
+      "from": 163,
+      "kind": "speaker",
+      "purpose": "Второй контрпример оставить живому исполнению.",
+      "reference": "img-3320:9"
+    },
+    {
+      "from": 221,
+      "kind": "split",
+      "purpose": "Список реально произнесённых дел сверху и непрерывный говорящий снизу. Это перечисление, не причинная схема.",
+      "reference": "img-3322:6–10",
+      "quotes": [
+        {
+          "startMs": 9280,
+          "endMs": 10120
+        },
+        {
+          "startMs": 14600,
+          "endMs": 15420
+        },
+        {
+          "startMs": 22780,
+          "endMs": 23380
+        }
+      ]
+    },
+    {
+      "from": 322,
+      "kind": "speaker",
+      "purpose": "Return from the already-heard list to the adult/independent-man statement, at its phrase boundary.",
+      "reference": "img-3320:42"
+    },
+    {
+      "from": 388,
+      "kind": "full",
+      "purpose": "Развязка в полном кадре, слова появляются по речи, без спойлера.",
+      "reference": "img-3320:108–120"
+    },
+    {
+      "from": 503,
+      "kind": "comparison",
+      "purpose": "После завершения речи сопоставить две настоящие цитаты; не заменять ими произносимые слова.",
+      "reference": "img-3321:159",
+      "quotes": [
+        {
+          "startMs": 29220,
+          "endMs": 30560
+        },
+        {
+          "startMs": 40320,
+          "endMs": 42040
+        }
+      ]
+    }
+  ],
+  "viewports": {
+    "speaker": {
+      "x": 64,
+      "y": 390,
+      "width": 952,
+      "height": 1320,
+      "sourceY": 140,
+      "zoom": 1
+    },
+    "quote": {
+      "x": 64,
+      "y": 176,
+      "width": 952,
+      "height": 1184,
+      "sourceY": 200,
+      "zoom": 1
+    },
+    "split": {
+      "x": 64,
+      "y": 730,
+      "width": 952,
+      "height": 980,
+      "sourceY": 190,
+      "zoom": 1
+    },
+    "full": {
+      "x": 0,
+      "y": 0,
+      "width": 1080,
+      "height": 1920,
+      "sourceY": 0,
+      "zoom": 1.025
+    },
+    "comparison": {
+      "x": 96,
+      "y": 840,
+      "width": 804,
+      "height": 870,
+      "sourceY": 230,
+      "zoom": 1
+    }
+  },
+  "refinements": [
+    {
+      "text": "Ни",
+      "sourceStartMs": 0,
+      "correctedStartMs": 440,
+      "evidence": "Source-only 20ms RMS: 0.42=-63.9dBFS, 0.44=-57.5, 0.46=-31.3, 0.48=-21.9. Acoustic onset candidate preserves quiet initial consonant; no speech/audio edit."
+    },
+    {
+      "text": "посуду.",
+      "sourceStartMs": 9620,
+      "correctedEndMs": 10120,
+      "evidence": "Unprompted actual-final ASR word end maps to source10.08s. Original source 20ms RMS: 10.04=-35.8dBFS, 10.06=-45.2, 10.08=-51.6, 10.10=-56.0, 10.12=-62.2, 10.14=-66.2; source10.20–10.60 remains near -65dBFS. Conservative acoustic word end10.12 retains tail, replacing earlier 10.54 estimate in silence. Separate timing candidate, audio unchanged."
+    },
+    {
+      "text": "тоже",
+      "sourceStartMs": 39580,
+      "correctedStartMs": 40320,
+      "evidence": "Actual-final acoustic-window ASR separates final clause from preceding pause. Source-only 20ms RMS: 40.28=-68.4dBFS,40.30=-69.8,40.32=-22.8,40.34=-8.5,40.36=-6.2. Source39.9–40.30 is quiet; progressive payoff must not reveal this word at39.58. Chosen acoustic onset40.32; no voice edit."
+    },
+    {
+      "text": "Я",
+      "sourceStartMs": 7960,
+      "correctedStartMs": 8640,
+      "evidence": "Source-only stereo 48k RMS in 20ms windows: 8.60=-59.3dBFS, 8.62=-57.4, 8.64=-37.4, 8.66=-24.5, 8.68=-13.6. Initial ASR included quiet preroll. Acoustic onset candidate, original audio and word end unchanged."
+    },
+    {
+      "text": "Сам",
+      "sourceStartMs": 13560,
+      "correctedStartMs": 13980,
+      "evidence": "Source-only 20ms RMS: 13.94=-60.4dBFS, 13.96=-59.8, 13.98=-47.3, 14.00=-38.3, 14.02=-32.4, 14.10=-15.0. Preserve quiet initial sibilant; candidate onset at 13.98, no voice edit."
+    },
+    {
+      "text": "Сам",
+      "sourceStartMs": 20820,
+      "correctedStartMs": 21300,
+      "evidence": "Source-only 20ms RMS: 21.28=-62.6dBFS, 21.30=-52.5, 21.32=-36.1, 21.34=-31.1, 21.42=-6.4. Preserve quiet initial sibilant; candidate onset at 21.30, no voice edit."
+    },
+    {
+      "text": "И",
+      "sourceStartMs": 38220,
+      "correctedStartMs": 38520,
+      "evidence": "Existing isolated source-voice ASR plus source-only 20ms RMS onset evidence at 38.52s, artifacts/dry-irony-v3/audio-mixes.json. Separate source timing candidate, not human phonetic confirmation."
+    },
+    {
+      "text": "Потому",
+      "sourceStartMs": 27040,
+      "correctedStartMs": 28120,
+      "evidence": "Source-only decoded 48k stereo 20ms RMS windows: 27.04=-67.3dBFS, 27.50=-68.3, 28.10=-63.9, 28.12=-49.3, 28.14=-55.5, 28.16=-24.9, 28.18=-7.6. Original ASR starts the word in silence; historical final ASR also includes quiet preroll (18.10 output =27.50 source). Cue starts at conservative acoustic onset 28.12, not the earlier ASR start. Phonetic segmentation remains a candidate; original word text/end unchanged."
+    }
+  ],
+  "music": {
+    "assetId": "music-relax-beat",
+    "sourceStartSeconds": 8,
+    "targetDbFS": -34,
+    "fadeInSeconds": 0.15,
+    "fadeOutSeconds": 0.25
+  },
+  "color": {
+    "method": "Source-specific SDR display RGB with manual feathered face exposure, not automatic subject detection or Log/HDR conversion",
+    "gamma": 0.99,
+    "contrast": 1.02,
+    "pivot": 0.42,
+    "saturation": 0.99,
+    "rgbGain": [
+      1.002,
+      1,
+      0.996
+    ],
+    "face": {
+      "center": [
+        375,
+        480
+      ],
+      "radius": [
+        210,
+        330
+      ],
+      "exposureStops": 0.42,
+      "shadowLow": 0.28,
+      "shadowHigh": 0.65
+    }
+  },
+  "compositionId": "DryIronyTight",
+  "baseReuseJobId": "dry-irony-story",
+  "pacing": {
+    "maximumGapMs": 600,
+    "policy": "Natural speech pacing; no duration padding. Only final retrospective comparison has a short reading hold."
+  }
+}

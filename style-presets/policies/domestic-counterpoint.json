@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "id": "domestic-counterpoint-v1",
+  "eligibility": "Explicit domestic satire brief with a speech-supported claim/action contrast; a household noun alone is insufficient.",
+  "aesthetic": "photographic",
+  "maximumCoverage": 0.45,
+  "minimumHoldFrames": 45,
+  "maximumSeriesItems": 4,
+  "maximumCutawayFrames": 75,
+  "seriesRule": "Adjacent images require the same declared series, different supported actions/assets and exact disjoint retained-word evidence.",
+  "speakerRule": "Keep the opening claim and final spoken payoff on the presenter. A short illustrative setup may precede the payoff, returning before its words.",
+  "motion": "Motivated shot changes and brief entries; no random zooms or effect cadence.",
+  "fallback": "Keep the presenter when genre, contrast, action specificity, rights, timing or ready matching assets are missing. AI/technical explainers use their own visual grammar."
+}

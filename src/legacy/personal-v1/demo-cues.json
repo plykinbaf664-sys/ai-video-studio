@@ -1,0 +1,33 @@
+{
+  "disclaimer": "These are fictional UI sample captions, not transcribed speech; never overlay on source audio.",
+  "fps": 30,
+  "events": [
+    {
+      "id": "hero-1",
+      "type": "hero",
+      "startFrame": 0,
+      "endFrame": 127,
+      "text": "Вы — самый дорогой сотрудник своей компании",
+      "meaning": "hook",
+      "highlightText": "самый дорогой"
+    },
+    {
+      "id": "caption-1",
+      "type": "caption",
+      "startFrame": 127,
+      "endFrame": 235,
+      "text": "Потому что все решения до сих пор проходят через вас.",
+      "meaning": "explanation"
+    },
+    {
+      "id": "hero-2",
+      "type": "hero",
+      "startFrame": 235,
+      "endFrame": 360,
+      "text": "А бизнес без вас не работает.",
+      "meaning": "contrast",
+      "highlightText": "не работает",
+      "punchLabel": "ОЧЕНЬ УДОБНО"
+    }
+  ]
+}

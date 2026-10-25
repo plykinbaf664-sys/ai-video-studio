@@ -1,0 +1,278 @@
+{
+  "schemaVersion": "1.0.0",
+  "items": [
+    {
+      "id": "personal-ref-img-3303-jpeg",
+      "title": "IMG_3303.jpeg",
+      "approvalStatus": "draft",
+      "source": {
+        "file": "reference-library/media/screenshots/IMG_3303.jpeg",
+        "sha256": "9c6731bf8e1701a18580347d429fda68a55f8da016a204d8859d05b5e7614528"
+      },
+      "usage": "reference-only",
+      "rightsEvidence": null,
+      "beats": []
+    },
+    {
+      "id": "personal-ref-img-3304-jpeg",
+      "title": "IMG_3304.jpeg",
+      "approvalStatus": "draft",
+      "source": {
+        "file": "reference-library/media/screenshots/IMG_3304.jpeg",
+        "sha256": "bb09355d9df68d162fb6e574be3978b3983c43eaa35ed7e9f96867e5888d14eb"
+      },
+      "usage": "reference-only",
+      "rightsEvidence": null,
+      "beats": []
+    },
+    {
+      "id": "personal-ref-img-3305-jpeg",
+      "title": "IMG_3305.jpeg",
+      "approvalStatus": "draft",
+      "source": {
+        "file": "reference-library/media/screenshots/IMG_3305.jpeg",
+        "sha256": "9852fadc4ec8dd6d7e1c0fa0bdde4528e10871f9e33a2c7055432fd66dbface3"
+      },
+      "usage": "reference-only",
+      "rightsEvidence": null,
+      "beats": []
+    },
+    {
+      "id": "personal-ref-img-3306-jpeg",
+      "title": "IMG_3306.jpeg",
+      "approvalStatus": "draft",
+      "source": {
+        "file": "reference-library/media/screenshots/IMG_3306.jpeg",
+        "sha256": "2488cd942af2f1e79cda9ec104c80485b05d408ff779fd2e9b3d65d828288eb1"
+      },
+      "usage": "reference-only",
+      "rightsEvidence": null,
+      "beats": []
+    },
+    {
+      "id": "personal-ref-img-3307-jpeg",
+      "title": "IMG_3307.jpeg",
+      "approvalStatus": "draft",
+      "source": {
+        "file": "reference-library/media/screenshots/IMG_3307.jpeg",
+        "sha256": "0cb91ac33177a2b2a89c05e3fac02d9541f7b33aa9327f0484148d055d892980"
+      },
+      "usage": "reference-only",
+      "rightsEvidence": null,
+      "beats": []
+    },
+    {
+      "id": "personal-ref-img-3308-jpeg",
+      "title": "IMG_3308.jpeg",
+      "approvalStatus": "draft",
+      "source": {
+        "file": "reference-library/media/screenshots/IMG_3308.jpeg",
+        "sha256": "7665df7d899261723046822060862efd816a74bb7b4676fa27d1d53a15b4f04e"
+      },
+      "usage": "reference-only",
+      "rightsEvidence": null,
+      "beats": []
+    },
+    {
+      "id": "personal-ref-img-3309-jpeg",
+      "title": "IMG_3309.jpeg",
+      "approvalStatus": "draft",
+      "source": {
+        "file": "reference-library/media/screenshots/IMG_3309.jpeg",
+        "sha256": "d4d746cbc149153e4e07fba0ca995d078a36294f7a023483ee7a367f26448a2d"
+      },
+      "usage": "reference-only",
+      "rightsEvidence": null,
+      "beats": []
+    },
+    {
+      "id": "personal-ref-img-3310-jpeg",
+      "title": "IMG_3310.jpeg",
+      "approvalStatus": "draft",
+      "source": {
+        "file": "reference-library/media/screenshots/IMG_3310.jpeg",
+        "sha256": "21a07c7a0ce9f083e8c239dbbf70e4b0dede3f7137096b4895e21db263929757"
+      },
+      "usage": "reference-only",
+      "rightsEvidence": null,
+      "beats": []
+    },
+    {
+      "id": "personal-ref-img-3311-jpeg",
+      "title": "IMG_3311.jpeg",
+      "approvalStatus": "draft",
+      "source": {
+        "file": "reference-library/media/screenshots/IMG_3311.jpeg",
+        "sha256": "bd9238b3dd192afd1bb0ed174b8fae5642a9db0a8398826cacc363b1464a291d"
+      },
+      "usage": "reference-only",
+      "rightsEvidence": null,
+      "beats": []
+    },
+    {
+      "id": "personal-ref-img-3312-jpeg",
+      "title": "IMG_3312.jpeg",
+      "approvalStatus": "draft",
+      "source": {
+        "file": "reference-library/media/screenshots/IMG_3312.jpeg",
+        "sha256": "1ebc31625d03319f8f59bbe942273d40089e58d2a9917ef488a21121cb9d805f"
+      },
+      "usage": "reference-only",
+      "rightsEvidence": null,
+      "beats": []
+    },
+    {
+      "id": "personal-ref-img-3313-jpeg",
+      "title": "IMG_3313.jpeg",
+      "approvalStatus": "draft",
+      "source": {
+        "file": "reference-library/media/screenshots/IMG_3313.jpeg",
+        "sha256": "21ce43acb88052389bf7312815a0bb72369b739447b091fef768b03278fa8101"
+      },
+      "usage": "reference-only",
+      "rightsEvidence": null,
+      "beats": []
+    },
+    {
+      "id": "personal-ref-img-3314-jpeg",
+      "title": "IMG_3314.jpeg",
+      "approvalStatus": "draft",
+      "source": {
+        "file": "reference-library/media/screenshots/IMG_3314.jpeg",
+        "sha256": "12eaca073746854b1d2b9b12128d11a24adcce53483f44982cf477f93dc5321d"
+      },
+      "usage": "reference-only",
+      "rightsEvidence": null,
+      "beats": []
+    },
+    {
+      "id": "personal-ref-img-3315-jpeg",
+      "title": "IMG_3315.jpeg",
+      "approvalStatus": "draft",
+      "source": {
+        "file": "reference-library/media/screenshots/IMG_3315.jpeg",
+        "sha256": "b0421eba1e0d3ca7b87e0bd5892884046cbd2872f640e5f8a56d28b61ed72d77"
+      },
+      "usage": "reference-only",
+      "rightsEvidence": null,
+      "beats": []
+    },
+    {
+      "id": "personal-ref-img-3316-jpeg",
+      "title": "IMG_3316.jpeg",
+      "approvalStatus": "draft",
+      "source": {
+        "file": "reference-library/media/screenshots/IMG_3316.jpeg",
+        "sha256": "d5ea6b9ed252ded03e8110c0b9b17f16c64829bce195ba08b1debfc502b59dc0"
+      },
+      "usage": "reference-only",
+      "rightsEvidence": null,
+      "beats": []
+    },
+    {
+      "id": "personal-ref-img-3317-jpeg",
+      "title": "IMG_3317.jpeg",
+      "approvalStatus": "draft",
+      "source": {
+        "file": "reference-library/media/screenshots/IMG_3317.jpeg",
+        "sha256": "ac1db5cf36a3a8662b79470637deefe0d9e6921edaa23d3d22304117c0595c93"
+      },
+      "usage": "reference-only",
+      "rightsEvidence": null,
+      "beats": []
+    },
+    {
+      "id": "img-3320",
+      "title": "User-supplied video IMG_3320; analysis only",
+      "approvalStatus": "draft",
+      "source": {
+        "file": "reference-library/media/video/IMG_3320.MP4",
+        "sha256": "a66835589809c074bae32407ec4f4a6ff939881d0204a95163c4bb9bd9f42610"
+      },
+      "usage": "reference-only",
+      "rightsEvidence": null,
+      "beats": [
+        {
+          "startMs": 0,
+          "endMs": 3000,
+          "axis": "typography",
+          "technique": "Headline hierarchy"
+        },
+        {
+          "startMs": 108000,
+          "endMs": 120000,
+          "axis": "typography",
+          "technique": "Larger meaningful words"
+        }
+      ]
+    },
+    {
+      "id": "img-3321",
+      "title": "User-supplied video IMG_3321; analysis only",
+      "approvalStatus": "draft",
+      "source": {
+        "file": "reference-library/media/video/IMG_3321.MP4",
+        "sha256": "ab4ed751aaa8756521133b2f0839a127a351a2022ac5c5798fc32aad099024b3"
+      },
+      "usage": "reference-only",
+      "rightsEvidence": null,
+      "beats": [
+        {
+          "startMs": 10500,
+          "endMs": 13000,
+          "axis": "graphics",
+          "technique": "Paper field and independent portrait window"
+        },
+        {
+          "startMs": 26000,
+          "endMs": 40000,
+          "axis": "graphics",
+          "technique": "Editorial collage / changed image proportions"
+        },
+        {
+          "startMs": 158000,
+          "endMs": 160000,
+          "axis": "typography",
+          "technique": "Standalone editorial statement"
+        }
+      ]
+    },
+    {
+      "id": "img-3322",
+      "title": "User-supplied video IMG_3322; analysis only",
+      "approvalStatus": "draft",
+      "source": {
+        "file": "reference-library/media/video/IMG_3322.MP4",
+        "sha256": "9fcb4e824bbc91a1646de55a0e3b61c71bff3ae3a201ba15c289a97d77802e20"
+      },
+      "usage": "reference-only",
+      "rightsEvidence": null,
+      "beats": [
+        {
+          "startMs": 6000,
+          "endMs": 10000,
+          "axis": "graphics",
+          "technique": "Split screen with structured UI"
+        },
+        {
+          "startMs": 11500,
+          "endMs": 13000,
+          "axis": "transitions",
+          "technique": "Full graphic cutaway, voice retained"
+        },
+        {
+          "startMs": 15000,
+          "endMs": 18000,
+          "axis": "motion",
+          "technique": "Sequential meaningful nodes"
+        },
+        {
+          "startMs": 27000,
+          "endMs": 33000,
+          "axis": "graphics",
+          "technique": "Topic nodes above speaker"
+        }
+      ]
+    }
+  ]
+}

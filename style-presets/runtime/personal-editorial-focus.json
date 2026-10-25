@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "personal-editorial-focus",
+  "name": "Editorial Focus",
+  "implementationStatus": "implemented",
+  "approvalStatus": "candidate",
+  "brandbookId": "personal-design-kit",
+  "referenceIds": [
+    "img-3320"
+  ],
+  "assetIds": [
+    "personal-onest",
+    "personal-inter",
+    "music-feedback-dreams",
+    "personal-semantic-mark",
+    "personal-soft-ui-tick"
+  ],
+  "rules": {
+    "rhythm": {
+      "source": "edit-plan",
+      "keepCompleteWords": true,
+      "minimumLeadMs": 120,
+      "minimumTailMs": 120
+    },
+    "subtitles": {
+      "maximumLines": 2,
+      "maximumWordsPerGroup": 6,
+      "maximumCharactersPerGroup": 44,
+      "splitGapMs": 450,
+      "tailMs": 140,
+      "quotesFromRetainedSpeechOnly": true
+    },
+    "graphics": {
+      "components": [
+        "spoken-type",
+        "chapter-marker"
+      ],
+      "maximumConcurrentFocus": 1,
+      "insertionPolicy": "semantic_only"
+    },
+    "motion": {
+      "quoteFadeFrames": 9,
+      "reframe": "purpose-driven"
+    },
+    "sound": {
+      "preserveOriginalVoice": true,
+      "music": "licensed-bed",
+      "soundEffects": "none"
+    },
+    "transitions": {
+      "kind": "cut",
+      "durationFrames": 0
+    },
+    "framing": {
+      "objectFit": "contain",
+      "automaticSubjectDetection": false
+    }
+  },
+  "design": {
+    "font": {
+      "assetId": "personal-onest",
+      "family": "PersonalOnest",
+      "runtimeFile": "generated/assets/fonts/personal-onest.ttf",
+      "subtitleWeight": 600,
+      "headingWeight": 750
+    },
+    "slot": {
+      "x": 96,
+      "y": 160,
+      "width": 804,
+      "maxHeight": 220
+    },
+    "safe": {
+      "left": 96,
+      "right": 180,
+      "top": 140,
+      "bottom": 300
+    },
+    "subtitle": {
+      "preferredSize": 72,
+      "minSize": 50,
+      "lineHeight": 1.1
+    },
+    "heading": {
+      "preferredSize": 100,
+      "minSize": 72,
+      "lineHeight": 1.03
+    },
+    "card": {
+      "paddingX": 0,
+      "paddingY": 0,
+      "radius": 0,
+      "background": "#111319",
+      "text": "#F6F3EC",
+      "border": "#E87942"
+    }
+  },
+  "staging": {
+    "renderer": "editorial",
+    "referenceBeats": [
+      {
+        "referenceId": "img-3320",
+        "startSeconds": 0,
+        "endSeconds": 18,
+        "technique": "Natural portrait, cardless readable type"
+      }
+    ],
+    "musicAssetId": "music-feedback-dreams",
+    "musicStartSeconds": 8,
+    "musicPauseDb": -30,
+    "musicDuckDb": -10,
+    "musicStopFrame": 450,
+    "scenes": [
+      {
+        "from": 0,
+        "layout": "full",
+        "purpose": "Natural portrait, cardless readable type"
+      },
+      {
+        "from": 38,
+        "layout": "full",
+        "purpose": "Motivated closer shot at the word никогда"
+      },
+      {
+        "from": 150,
+        "layout": "full",
+        "purpose": "New complete spoken example; return to wider shot"
+      },
+      {
+        "from": 267,
+        "layout": "full",
+        "purpose": "Final initiative example"
+      },
+      {
+        "from": 348,
+        "layout": "payoff",
+        "purpose": "Larger spoken payoff and restrained final close-up"
+      }
+    ]
+  }
+}

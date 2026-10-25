@@ -1,0 +1,11 @@
+{
+ "version":1,"id":"dry-irony","parentStyleId":"personal-dry-irony","approvalStatus":"candidate","brandbookId":"personal-design-kit",
+ "assetIds":["personal-onest","personal-inter","music-relax-beat"],"referenceIds":["img-3320","img-3321","img-3322"],
+ "palette":{"paper":"#F6F3EC","ink":"#111319","accent":"#E87942"},
+ "typography":{"family":"PersonalOnest","body":82,"quote":98,"hero":100,"minimum":64,"weight":650},
+ "captions":{"maximumWords":4,"maximumCharacters":34,"splitGapMs":450,"tailMs":180,"maximumLines":2},
+ "motion":{"entryFrames":7,"translatePixels":10},"safe":{"x":96,"y":140,"width":804,"height":1480},
+ "scenes":["speaker","quote","split","comparison","full"],"minimumSceneFrames":24,
+ "music":{"mode":"steady","minimumVoiceLeadDb":14,"duckDb":0},
+ "directionRules":{"rhythm":"Hold complete thought and reaction; cut at source pauses; no beat-driven speech trimming.","speaker":"Default: face and hands have priority; one ordinary speech layer.","quote":"Current spoken phrase replaces ordinary subtitles in a large separate slot.","split":"2–3 retained verbatim items, progressive reveal after each is heard; enumeration without invented causal arrows.","comparison":"Exactly two retrospective quotes; reveal only after both spoken and the current subtitle has ended.","transitions":"Motivated straight composition cuts on a shared source clock; short frame-driven text entry.","sound":"Original voice and single continuous quiet song segment, no phrase ducking or pause boost.","effects":"No random particles, stingers, stock footage, or simulated 3D."}
+}

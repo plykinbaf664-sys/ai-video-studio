@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "motion-collage",
+  "name": "Motion Collage",
+  "implementationStatus": "not_implemented",
+  "goal": "Создать авторскую редакционную энергию",
+  "bestFor": "Креативные истории, идеи, эссе",
+  "directorRules": {
+    "editingRhythm": "Пульсирующий, но контролируемый ритм",
+    "subtitleDesign": "Смешанная выразительная типографика",
+    "motionLanguage": "Многослойные бумажные/фото анимации",
+    "graphicsAndBroll": "Вырезки, текстуры и графика с лицензиями",
+    "soundDesign": "Фактурные SFX без перегруза",
+    "avoid": "Случайных элементов без смысловой связи",
+    "semanticPolicy": "Применять только при подтверждённой смысловой функции, не по регулярному таймеру."
+  },
+  "supportedVariantsToImplement": [
+    "restrained",
+    "balanced",
+    "intense"
+  ],
+  "demoStoryboard": [
+    {
+      "beat": 1,
+      "intention": "Проблема через коллаж"
+    },
+    {
+      "beat": 2,
+      "intention": "Собрать аргументы на слоях"
+    },
+    {
+      "beat": 3,
+      "intention": "Показать целую картину"
+    }
+  ],
+  "preview": {
+    "status": "not_rendered",
+    "renderWithSameSourceAsOtherPresets": true
+  }
+}

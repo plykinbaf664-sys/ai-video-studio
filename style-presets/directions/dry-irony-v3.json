@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "id": "dry-irony-v3",
+  "parentStyleId": "personal-dry-irony",
+  "approvalStatus": "candidate",
+  "brandbookId": "personal-design-kit",
+  "assetIds": ["personal-onest", "music-relax-beat"],
+  "referenceIds": ["img-3321", "img-3320"],
+  "fps": 30,
+  "durationInFrames": 414,
+  "captionRefinements":[{"text":"И","sourceStartMs":38220,"correctedStartMs":38520,"evidence":"Source-only 20ms RMS windows: -56.6dBFS at 38.50s, -29.4 at 38.52s, -15.8 at 38.54s. Unprompted isolated-voice ASR estimates source 38.32–38.66s, including pre-onset quiet. Chosen acoustic onset estimate 38.52s; not human phonetic approval."}],
+  "sourceClips": [
+    {"id":"hook","start":0,"end":4.6,"purpose":"Complete claim, 1.16s deliberate pause; remove .4s of waiting"},
+    {"id":"dishes","start":7.7,"end":11.3,"purpose":"Whole domestic counterexample, retain reaction; remove .3s of waiting"},
+    {"id":"payoff","start":37.4,"end":43,"purpose":"Shorten pre-speech silence by .5s; preserve whole final phrase and natural reaction"}
+  ],
+  "scenes": [
+    {"from":0,"layout":"portrait","purpose":"Large speaker on paper, readable speech above; no micro-labels","reference":"img-3321:10.5–12"},
+    {"from":138,"layout":"poster","purpose":"Spoken action becomes a large editorial phrase below the speaker","reference":"img-3321:159"},
+    {"from":246,"layout":"portrait","purpose":"Return visual space to the speaker before the final line","reference":"img-3321:10.5–12"},
+    {"from":312,"layout":"full","purpose":"Return to full-height face as the spoken payoff begins; no advance reveal","reference":"img-3320:108–120"}
+  ],
+  "paper":"#F6F3EC",
+  "ink":"#111319",
+  "accent":"#E87942",
+  "type":{"body":82,"poster":98,"hero":100,"minimum":64,"weight":650},
+  "music":{"mode":"steady","assetId":"music-relax-beat","sourceStartSeconds":8,"pauseDbFS":-34,"minimumVoiceLeadDb":14,"duckDb":0,"stopSeconds":13.8,"attackSeconds":0.12,"releaseSeconds":0.26,"fadeInSeconds":0.15,"fadeOutSeconds":0.25},
+  "color":{"method":"Source-specific SDR display RGB with manual feathered face exposure, not automatic subject detection or Log/HDR conversion","gamma":0.99,"contrast":1.02,"pivot":0.42,"saturation":0.99,"rgbGain":[1.002,1,0.996],"face":{"center":[375,480],"radius":[210,330],"exposureStops":0.42,"shadowLow":0.28,"shadowHigh":0.65}}
+}

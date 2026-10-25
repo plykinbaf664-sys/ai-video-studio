@@ -1,0 +1,4 @@
+/** Original project-owned line artwork. No downloaded or unlicensed icon set. */
+export const Symbol:React.FC<{kind:'agency'|'dish'|'laundry';size?:number}>=({kind,size=92})=><svg width={size} height={size} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+ {kind==='dish'?<><ellipse cx="50" cy="52" rx="29" ry="31"/><ellipse cx="50" cy="52" rx="20" ry="22"/><path d="M9 20v23m-5-23v18c0 9 10 9 10 0V20M9 48v33m78-61c-8 9-8 22 0 25v36m0-61v25"/></>:kind==='laundry'?<><path d="M43 22c0-13 20-13 20 0 0 7-12 10-12 20M51 42 13 68c-4 3-2 9 3 9h70c5 0 7-6 3-9L51 42Z"/><path d="M21 71h60"/></>:<><circle cx="50" cy="50" r="28"/><circle cx="50" cy="50" r="6"/><path d="M50 4v12m0 68v12M4 50h12m68 0h12M19 19l9 9m44 44 9 9M19 81l9-9m44-44 9-9"/></>}
+ </svg>;

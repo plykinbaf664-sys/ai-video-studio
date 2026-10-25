@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "cinematic-story",
+  "name": "Cinematic Story",
+  "implementationStatus": "not_implemented",
+  "goal": "Поддержать эмоциональное повествование",
+  "bestFor": "Личная история, драматический выбор, трансформация",
+  "directorRules": {
+    "editingRhythm": "Склейки по событию/эмоции, пространство тишины",
+    "subtitleDesign": "Редкие кинематографичные титры",
+    "motionLanguage": "Медленные push-in, мягкие световые переходы",
+    "graphicsAndBroll": "Атмосферные планы с ясной ролью, не псевдодокументальные",
+    "soundDesign": "Акцент на голосе, атмосфера, контролируемые паузы",
+    "avoid": "Музыки, заставляющей эмоции вместо истории",
+    "semanticPolicy": "Применять только при подтверждённой смысловой функции, не по регулярному таймеру."
+  },
+  "supportedVariantsToImplement": [
+    "restrained",
+    "balanced",
+    "intense"
+  ],
+  "demoStoryboard": [
+    {
+      "beat": 1,
+      "intention": "Ситуация и контекст"
+    },
+    {
+      "beat": 2,
+      "intention": "Поворот и усиление кадра"
+    },
+    {
+      "beat": 3,
+      "intention": "Вывод без агрессивных эффектов"
+    }
+  ],
+  "preview": {
+    "status": "not_rendered",
+    "renderWithSameSourceAsOtherPresets": true
+  }
+}

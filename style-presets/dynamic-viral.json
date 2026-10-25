@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "dynamic-viral",
+  "name": "Dynamic Viral",
+  "implementationStatus": "not_implemented",
+  "goal": "Подчеркнуть эмоциональные пики короткого ролика",
+  "bestFor": "Рилсы, энергичные тезисы, яркий хук",
+  "directorRules": {
+    "editingRhythm": "Быстрые, но смысловые склейки и push-in",
+    "subtitleDesign": "Крупные акценты отдельных слов, ограниченное количество цветов",
+    "motionLanguage": "Ускоренные reframe, короткие scale-in",
+    "graphicsAndBroll": "Ровно те вставки, которые иллюстрируют тезис",
+    "soundDesign": "Точные короткие удары, голос впереди",
+    "avoid": "Постоянного тряски и эффектов каждые 2 секунды",
+    "semanticPolicy": "Применять только при подтверждённой смысловой функции, не по регулярному таймеру."
+  },
+  "supportedVariantsToImplement": [
+    "restrained",
+    "balanced",
+    "intense"
+  ],
+  "demoStoryboard": [
+    {
+      "beat": 1,
+      "intention": "Хук крупным словом"
+    },
+    {
+      "beat": 2,
+      "intention": "Демонстрация проблемы инфографикой"
+    },
+    {
+      "beat": 3,
+      "intention": "Панчлайн с краткой паузой"
+    }
+  ],
+  "preview": {
+    "status": "not_rendered",
+    "renderWithSameSourceAsOtherPresets": true
+  }
+}

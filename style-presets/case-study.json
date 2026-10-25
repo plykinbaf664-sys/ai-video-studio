@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "case-study",
+  "name": "Case Study",
+  "implementationStatus": "not_implemented",
+  "goal": "Доказательно показать трансформацию",
+  "bestFor": "Бизнес-кейсы, до/после, проектный разбор",
+  "directorRules": {
+    "editingRhythm": "Структура проблема → решение → итог",
+    "subtitleDesign": "Подписи этапов, метрики только подтверждённые",
+    "motionLanguage": "Сравнение сторон и диаграммы прогресса",
+    "graphicsAndBroll": "Разрешённые скрины, графики, реальные результаты",
+    "soundDesign": "Сдержанный мотив успеха, голос основной",
+    "avoid": "Несуществующих отзывов и показателей",
+    "semanticPolicy": "Применять только при подтверждённой смысловой функции, не по регулярному таймеру."
+  },
+  "supportedVariantsToImplement": [
+    "restrained",
+    "balanced",
+    "intense"
+  ],
+  "demoStoryboard": [
+    {
+      "beat": 1,
+      "intention": "До: симптом"
+    },
+    {
+      "beat": 2,
+      "intention": "Что сделали"
+    },
+    {
+      "beat": 3,
+      "intention": "После: реальный результат"
+    }
+  ],
+  "preview": {
+    "status": "not_rendered",
+    "renderWithSameSourceAsOtherPresets": true
+  }
+}

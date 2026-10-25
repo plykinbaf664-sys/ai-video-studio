@@ -1,0 +1,9 @@
+{
+ "version":1,
+ "styles":{
+  "editorial-focus":{"allowedPresentations":["retain","protect-face","protect-gesture","avoid-graphics"],"priority":"Calm face-first framing, restrained graphic slots and stable captions","motion":"Minimal entry; never animate to a timer unrelated to meaning"},
+  "signal-dynamic":{"allowedPresentations":["retain","protect-face","protect-gesture","avoid-graphics"],"priority":"Progressive infographic above a protected speaker, readable2–3 semantic states","motion":"Sequential source-anchored reveal, restrained light/blur/translation"},
+  "dry-irony":{"allowedPresentations":["retain","protect-face","protect-gesture","avoid-graphics"],"priority":"Preserve facial delivery and punchline; graphics only reinforce actual contrast","motion":"Restrained entry and hold, no reveal before speech"}
+ },
+ "shared":{"maximumZoom":1,"minimumConfidenceForGeometry":0.65,"minimumRepriseHoldFrames":24,"music":"steady","broll":false,"automaticColor":false,"emotion":"Observable expression only; no psychological inference","unknown":"Keep conservative manual protection; never invent coordinates"}
+}

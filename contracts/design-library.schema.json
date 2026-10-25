@@ -1,0 +1,941 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.ai-video-studio/contracts/design-library.schema.json",
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "ids": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/id"
+      },
+      "uniqueItems": true
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "nonnegative": {
+      "type": "number",
+      "minimum": 0
+    },
+    "positive": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "referenceSource": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "url"
+          ],
+          "properties": {
+            "url": {
+              "type": "string",
+              "pattern": "^https://"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "file",
+            "sha256"
+          ],
+          "properties": {
+            "file": {
+              "$ref": "#/$defs/text"
+            },
+            "sha256": {
+              "$ref": "#/$defs/sha256"
+            }
+          }
+        }
+      ]
+    },
+    "typeScale": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "preferredSize",
+        "minSize",
+        "lineHeight"
+      ],
+      "properties": {
+        "preferredSize": {
+          "type": "number",
+          "minimum": 16,
+          "maximum": 160
+        },
+        "minSize": {
+          "type": "number",
+          "minimum": 16,
+          "maximum": 160
+        },
+        "lineHeight": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 2
+        }
+      }
+    },
+    "style": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "id",
+        "name",
+        "implementationStatus",
+        "approvalStatus",
+        "brandbookId",
+        "referenceIds",
+        "assetIds",
+        "rules",
+        "design"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0.0"
+        },
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "$ref": "#/$defs/text"
+        },
+        "implementationStatus": {
+          "enum": [
+            "not_implemented",
+            "implemented"
+          ]
+        },
+        "approvalStatus": {
+          "enum": [
+            "draft",
+            "candidate",
+            "approved",
+            "technical-baseline"
+          ]
+        },
+        "brandbookId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "referenceIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "assetIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "rules": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "rhythm",
+            "subtitles",
+            "graphics",
+            "motion",
+            "sound",
+            "transitions",
+            "framing"
+          ],
+          "properties": {
+            "rhythm": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "source",
+                "keepCompleteWords",
+                "minimumLeadMs",
+                "minimumTailMs"
+              ],
+              "properties": {
+                "source": {
+                  "const": "edit-plan"
+                },
+                "keepCompleteWords": {
+                  "type": "boolean"
+                },
+                "minimumLeadMs": {
+                  "$ref": "#/$defs/nonnegative"
+                },
+                "minimumTailMs": {
+                  "$ref": "#/$defs/nonnegative"
+                }
+              }
+            },
+            "subtitles": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "maximumLines",
+                "maximumWordsPerGroup",
+                "maximumCharactersPerGroup",
+                "splitGapMs",
+                "tailMs",
+                "quotesFromRetainedSpeechOnly"
+              ],
+              "properties": {
+                "maximumLines": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 2
+                },
+                "maximumWordsPerGroup": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 8
+                },
+                "maximumCharactersPerGroup": {
+                  "type": "integer",
+                  "minimum": 10,
+                  "maximum": 85
+                },
+                "splitGapMs": {
+                  "$ref": "#/$defs/nonnegative"
+                },
+                "tailMs": {
+                  "$ref": "#/$defs/nonnegative"
+                },
+                "quotesFromRetainedSpeechOnly": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "graphics": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "components",
+                "maximumConcurrentFocus",
+                "insertionPolicy"
+              ],
+              "properties": {
+                "components": {
+                  "$ref": "#/$defs/ids"
+                },
+                "maximumConcurrentFocus": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "insertionPolicy": {
+                  "enum": [
+                    "semantic_only",
+                    "rich",
+                    "minimal"
+                  ]
+                }
+              }
+            },
+            "motion": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "quoteFadeFrames",
+                "reframe"
+              ],
+              "properties": {
+                "quoteFadeFrames": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 30
+                },
+                "reframe": {
+                  "enum": [
+                    "none",
+                    "purpose-driven"
+                  ]
+                }
+              }
+            },
+            "sound": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "preserveOriginalVoice",
+                "music",
+                "soundEffects"
+              ],
+              "properties": {
+                "preserveOriginalVoice": {
+                  "type": "boolean"
+                },
+                "music": {
+                  "enum": [
+                    "none",
+                    "licensed-bed"
+                  ]
+                },
+                "soundEffects": {
+                  "enum": [
+                    "none",
+                    "semantic-only"
+                  ]
+                }
+              }
+            },
+            "transitions": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "kind",
+                "durationFrames"
+              ],
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "cut",
+                    "crossfade",
+                    "motivated-wipe"
+                  ]
+                },
+                "durationFrames": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 60
+                }
+              }
+            },
+            "framing": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "objectFit",
+                "automaticSubjectDetection"
+              ],
+              "properties": {
+                "objectFit": {
+                  "enum": [
+                    "contain",
+                    "cover"
+                  ]
+                },
+                "automaticSubjectDetection": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "design": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "font",
+            "slot",
+            "safe",
+            "subtitle",
+            "heading",
+            "card"
+          ],
+          "properties": {
+            "font": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assetId",
+                "family",
+                "runtimeFile",
+                "subtitleWeight",
+                "headingWeight"
+              ],
+              "properties": {
+                "assetId": {
+                  "$ref": "#/$defs/id"
+                },
+                "family": {
+                  "$ref": "#/$defs/text"
+                },
+                "runtimeFile": {
+                  "type": "string",
+                  "pattern": "^generated/assets/fonts/[^/\\\\]+\\.(ttf|otf|woff2)$"
+                },
+                "subtitleWeight": {
+                  "type": "integer",
+                  "minimum": 100,
+                  "maximum": 900
+                },
+                "headingWeight": {
+                  "type": "integer",
+                  "minimum": 100,
+                  "maximum": 900
+                }
+              }
+            },
+            "slot": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "x",
+                "y",
+                "width",
+                "maxHeight"
+              ],
+              "properties": {
+                "x": {
+                  "$ref": "#/$defs/nonnegative"
+                },
+                "y": {
+                  "$ref": "#/$defs/nonnegative"
+                },
+                "width": {
+                  "$ref": "#/$defs/positive"
+                },
+                "maxHeight": {
+                  "$ref": "#/$defs/positive"
+                }
+              }
+            },
+            "safe": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "left",
+                "right",
+                "top",
+                "bottom"
+              ],
+              "properties": {
+                "left": {
+                  "$ref": "#/$defs/nonnegative"
+                },
+                "right": {
+                  "$ref": "#/$defs/nonnegative"
+                },
+                "top": {
+                  "$ref": "#/$defs/nonnegative"
+                },
+                "bottom": {
+                  "$ref": "#/$defs/nonnegative"
+                }
+              }
+            },
+            "subtitle": {
+              "$ref": "#/$defs/typeScale"
+            },
+            "heading": {
+              "$ref": "#/$defs/typeScale"
+            },
+            "card": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "paddingX",
+                "paddingY",
+                "radius",
+                "background",
+                "text",
+                "border"
+              ],
+              "properties": {
+                "paddingX": {
+                  "$ref": "#/$defs/nonnegative"
+                },
+                "paddingY": {
+                  "$ref": "#/$defs/nonnegative"
+                },
+                "radius": {
+                  "$ref": "#/$defs/nonnegative"
+                },
+                "background": {
+                  "$ref": "#/$defs/text"
+                },
+                "text": {
+                  "$ref": "#/$defs/text"
+                },
+                "border": {
+                  "$ref": "#/$defs/text"
+                }
+              }
+            }
+          }
+        },
+        "staging": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "renderer",
+            "referenceBeats",
+            "musicAssetId",
+            "musicStartSeconds",
+            "musicPauseDb",
+            "musicDuckDb",
+            "musicStopFrame",
+            "scenes"
+          ],
+          "properties": {
+            "renderer": {
+              "enum": [
+                "editorial",
+                "paper",
+                "signal"
+              ]
+            },
+            "referenceBeats": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "referenceId",
+                  "startSeconds",
+                  "endSeconds",
+                  "technique"
+                ],
+                "properties": {
+                  "referenceId": {
+                    "type": "string"
+                  },
+                  "startSeconds": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "endSeconds": {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                  },
+                  "technique": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            },
+            "musicAssetId": {
+              "type": "string"
+            },
+            "musicStartSeconds": {
+              "type": "number",
+              "minimum": 0
+            },
+            "musicPauseDb": {
+              "type": "number"
+            },
+            "musicDuckDb": {
+              "type": "number"
+            },
+            "musicStopFrame": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 450
+            },
+            "scenes": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "from",
+                  "layout",
+                  "purpose"
+                ],
+                "properties": {
+                  "from": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 449
+                  },
+                  "layout": {
+                    "enum": [
+                      "full",
+                      "poster",
+                      "portrait",
+                      "split",
+                      "graphic",
+                      "payoff"
+                    ]
+                  },
+                  "purpose": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "asset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "path",
+        "sha256",
+        "usage",
+        "license"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "enum": [
+            "font",
+            "graphic",
+            "audio",
+            "video"
+          ]
+        },
+        "path": {
+          "$ref": "#/$defs/text"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "runtimeFile": {
+          "$ref": "#/$defs/text"
+        },
+        "usage": {
+          "enum": [
+            "technical-baseline",
+            "candidate",
+            "approved"
+          ]
+        },
+        "license": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "file",
+            "source"
+          ],
+          "properties": {
+            "label": {
+              "$ref": "#/$defs/text"
+            },
+            "file": {
+              "$ref": "#/$defs/text"
+            },
+            "source": {
+              "$ref": "#/$defs/text"
+            }
+          }
+        },
+        "visual": {
+          "$ref": "#/$defs/visualAsset"
+        }
+      }
+    },
+    "brandbook": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "approvalStatus",
+        "fontAssetIds",
+        "palette",
+        "restrictions",
+        "source"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "$ref": "#/$defs/text"
+        },
+        "approvalStatus": {
+          "enum": [
+            "draft",
+            "approved"
+          ]
+        },
+        "fontAssetIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "palette": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^#[a-fA-F0-9]{6}$"
+          }
+        },
+        "restrictions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/text"
+          }
+        },
+        "source": {
+          "$ref": "#/$defs/referenceSource"
+        }
+      }
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "approvalStatus",
+        "source",
+        "usage",
+        "rightsEvidence",
+        "beats"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "$ref": "#/$defs/text"
+        },
+        "approvalStatus": {
+          "enum": [
+            "draft",
+            "approved"
+          ]
+        },
+        "source": {
+          "$ref": "#/$defs/referenceSource"
+        },
+        "usage": {
+          "enum": [
+            "reference-only",
+            "licensed-reuse",
+            "unknown"
+          ]
+        },
+        "rightsEvidence": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "beats": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "startMs",
+              "endMs",
+              "axis",
+              "technique"
+            ],
+            "properties": {
+              "startMs": {
+                "$ref": "#/$defs/nonnegative"
+              },
+              "endMs": {
+                "$ref": "#/$defs/positive"
+              },
+              "axis": {
+                "enum": [
+                  "rhythm",
+                  "typography",
+                  "graphics",
+                  "motion",
+                  "sound",
+                  "transitions"
+                ]
+              },
+              "technique": {
+                "$ref": "#/$defs/text"
+              }
+            }
+          }
+        }
+      }
+    },
+    "visualAsset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "kind",
+        "domains",
+        "intents",
+        "styles",
+        "tags",
+        "rights",
+        "provenanceFile"
+      ],
+      "properties": {
+        "version": {
+          "const": 1
+        },
+        "kind": {
+          "enum": [
+            "illustration",
+            "template"
+          ]
+        },
+        "template": {
+          "enum": [
+            "process",
+            "comparison",
+            "system"
+          ]
+        },
+        "domains": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "ai",
+              "domestic",
+              "general"
+            ]
+          }
+        },
+        "intents": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "contrast",
+              "explain-process",
+              "compare",
+              "explain-system"
+            ]
+          }
+        },
+        "styles": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "dry-irony",
+              "signal-dynamic",
+              "editorial-focus"
+            ]
+          }
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "rights": {
+          "enum": [
+            "project-original",
+            "generated",
+            "licensed"
+          ]
+        },
+        "provenanceFile": {
+          "type": "string",
+          "pattern": "^assets/"
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "aesthetic": {
+          "enum": [
+            "photographic",
+            "illustrated",
+            "native"
+          ]
+        },
+        "subjects": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "dishwashing",
+              "cooking",
+              "bathroom-repair",
+              "laundry-hanging"
+            ]
+          }
+        },
+        "castId": {
+          "$ref": "#/$defs/id"
+        },
+        "photoSafety": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "width",
+            "height",
+            "protectedRegions"
+          ],
+          "properties": {
+            "width": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "height": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "protectedRegions": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 8,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "x",
+                  "y",
+                  "width",
+                  "height"
+                ],
+                "properties": {
+                  "x": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  "y": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  "width": {
+                    "type": "number",
+                    "exclusiveMinimum": 0,
+                    "maximum": 1
+                  },
+                  "height": {
+                    "type": "number",
+                    "exclusiveMinimum": 0,
+                    "maximum": 1
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
